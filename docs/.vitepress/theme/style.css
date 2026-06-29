@@ -12,6 +12,11 @@
 
   --vp-nav-height: 56px;
   --vp-layout-max-width: 1440px;
+
+  --vp-scrollbar-size: 6px;
+  --vp-scrollbar-thumb: color-mix(in srgb, var(--vp-c-text-3) 50%, transparent);
+  --vp-scrollbar-thumb-hover: color-mix(in srgb, var(--vp-c-text-2) 65%, transparent);
+  --vp-scrollbar-track: transparent;
 }
 
 .dark {
@@ -39,6 +44,80 @@
 
 .VPDoc .aside-cur {
   border-radius: 4px;
+}
+
+/* ---- 滚动条（侧栏 / 大纲 / 页面统一细滚动条） ---- */
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--vp-scrollbar-thumb) var(--vp-scrollbar-track);
+}
+
+html::-webkit-scrollbar {
+  width: var(--vp-scrollbar-size);
+  height: var(--vp-scrollbar-size);
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--vp-scrollbar-track);
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: calc(var(--vp-scrollbar-size) / 2);
+  background: var(--vp-scrollbar-thumb);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-scrollbar-thumb-hover);
+}
+
+.VPSidebar,
+.VPNavScreen,
+.VPDoc .aside-container {
+  scrollbar-width: thin !important;
+  scrollbar-color: var(--vp-scrollbar-thumb) var(--vp-scrollbar-track);
+}
+
+.VPSidebar::-webkit-scrollbar,
+.VPNavScreen::-webkit-scrollbar,
+.VPDoc .aside-container::-webkit-scrollbar {
+  display: block !important;
+  width: var(--vp-scrollbar-size);
+  height: var(--vp-scrollbar-size);
+}
+
+.VPSidebar::-webkit-scrollbar-track,
+.VPNavScreen::-webkit-scrollbar-track,
+.VPDoc .aside-container::-webkit-scrollbar-track {
+  background: var(--vp-scrollbar-track);
+}
+
+.VPSidebar::-webkit-scrollbar-thumb,
+.VPNavScreen::-webkit-scrollbar-thumb,
+.VPDoc .aside-container::-webkit-scrollbar-thumb {
+  border-radius: calc(var(--vp-scrollbar-size) / 2);
+  background: var(--vp-scrollbar-thumb);
+}
+
+.VPSidebar::-webkit-scrollbar-thumb:hover,
+.VPNavScreen::-webkit-scrollbar-thumb:hover,
+.VPDoc .aside-container::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-scrollbar-thumb-hover);
+}
+
+.vp-doc div[class*='language-'] pre {
+  scrollbar-width: thin;
+  scrollbar-color: var(--vp-scrollbar-thumb) var(--vp-scrollbar-track);
+}
+
+.vp-doc div[class*='language-'] pre::-webkit-scrollbar {
+  width: var(--vp-scrollbar-size);
+  height: var(--vp-scrollbar-size);
+}
+
+.vp-doc div[class*='language-'] pre::-webkit-scrollbar-thumb {
+  border-radius: calc(var(--vp-scrollbar-size) / 2);
+  background: var(--vp-scrollbar-thumb);
 }
 
 /* ---- 首页 ---- */
