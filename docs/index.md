@@ -17,7 +17,7 @@ hero:
       link: /guide/
     - theme: alt
       text: GitHub
-      link: https://github.com/G3G4X5X6/mitm-scanner
+      link: https://github.com/gougu-security/flowmind
 
 features:
   - icon: 🔍
@@ -51,11 +51,11 @@ features:
 
 | 层级 | 技术选型 |
 |------|----------|
-| 桌面框架 | Tauri v2 |
-| 前端 | React 19 + TypeScript + Vite 8 |
-| 后端 | Rust + tokio |
+| 桌面框架 | 跨平台桌面应用 |
+| 前端 | 现代 Web 技术栈 |
+| 后端 | 高性能原生引擎 |
 | AI | 多 Provider、工具调用、向量检索与知识库 |
-| 数据存储 | SQLite |
+| 数据存储 | 本地数据库 |
 
 ## 为什么选择 FlowMind？
 
@@ -65,7 +65,7 @@ features:
 
 ### 🔒 安全可靠
 
-所有数据默认存储在本地 SQLite，不上传云端。商业功能通过应用内许可管理，具体策略不向公开文档披露。
+所有数据默认存储在本地，不上传云端。商业功能通过应用内许可管理，具体策略不向公开文档披露。
 
 ### 🧠 AI 原生
 
@@ -77,6 +77,6 @@ features:
 
 ## 社区
 
-- [GitHub Issues](https://github.com/G3G4X5X6/mitm-scanner/issues) - 报告问题和建议
-- [GitHub Discussions](https://github.com/G3G4X5X6/mitm-scanner/discussions) - 社区讨论
-- [贡献指南](./dev/contributing.md) - 参与项目开发
+- [GitHub Issues](https://github.com/gougu-security/flowmind/issues) - 报告产品问题与建议
+- [文档 Issues](https://github.com/gougu-security/flowmind-docs/issues) - 报告文档问题
+- [贡献指南](./dev/contributing.md) - 参与文档贡献

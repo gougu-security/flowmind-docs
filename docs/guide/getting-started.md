@@ -6,7 +6,7 @@
 
 ### 从 GitHub Releases 下载
 
-1. 访问 [GitHub Releases](https://github.com/G3G4X5X6/mitm-scanner/releases) 页面
+1. 访问 [GitHub Releases](https://github.com/gougu-security/flowmind/releases) 页面
 2. 根据您的操作系统下载对应的安装包：
    - **Windows**: `FlowMind-x.x.x-x64-setup.exe`
    - **macOS**: `FlowMind-x.x.x.dmg`

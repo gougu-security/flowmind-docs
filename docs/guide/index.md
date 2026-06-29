@@ -4,7 +4,7 @@
 
 ## 什么是 FlowMind？
 
-FlowMind 是一个基于 Tauri v2 + React + TypeScript + Rust 的桌面端应用安全工作台。它集成了以下核心能力：
+FlowMind 是一个桌面端应用安全工作台。它集成了以下核心能力：
 
 - **代理抓包**：内嵌 MITM 引擎，支持 HTTP/HTTPS/WebSocket
 - **流量分析**：实时转发器、拦截器、请求详情
@@ -56,5 +56,5 @@ FlowMind 是一个基于 Tauri v2 + React + TypeScript + Rust 的桌面端应用
 如果遇到问题，可以通过以下方式获取帮助：
 
 1. **查看文档**：浏览本指南的各个章节
-2. **GitHub Issues**：[提交问题](https://github.com/G3G4X5X6/mitm-scanner/issues)
-3. **社区讨论**：[GitHub Discussions](https://github.com/G3G4X5X6/mitm-scanner/discussions)
+2. **GitHub Issues**：[提交产品问题](https://github.com/gougu-security/flowmind/issues)
+3. **文档 Issues**：[提交文档问题](https://github.com/gougu-security/flowmind-docs/issues)

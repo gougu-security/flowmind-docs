@@ -17,7 +17,7 @@ hero:
       link: /en/guide/
     - theme: alt
       text: GitHub
-      link: https://github.com/G3G4X5X6/mitm-scanner
+      link: https://github.com/gougu-security/flowmind
 
 features:
   - icon: 🔍
@@ -51,11 +51,11 @@ features:
 
 | Layer | Technology |
 |-------|------------|
-| Desktop Framework | Tauri v2 |
-| Frontend | React 19 + TypeScript + Vite 8 |
-| Backend | Rust + tokio |
+| Desktop Framework | Cross-platform desktop app |
+| Frontend | Modern web stack |
+| Backend | High-performance native engine |
 | AI | Multi-provider chat, tools, vector search & knowledge base |
-| Data Storage | SQLite |
+| Data Storage | Local database |
 
 ## Why Choose FlowMind?
 
@@ -65,7 +65,7 @@ Built-in Rust-based proxy engine with no external dependencies. Virtual list tec
 
 ### 🔒 Secure & Reliable
 
-All data stored locally in SQLite by default. Commercial features are managed via in-app licensing; policy details are not published in public docs.
+All data is stored locally by default. Commercial features are managed via in-app licensing; policy details are not published in public docs.
 
 ### 🧠 AI-Native
 
@@ -77,6 +77,6 @@ Support for WASM and declarative YAML plugins to easily extend scanning rules fo
 
 ## Community
 
-- [GitHub Issues](https://github.com/G3G4X5X6/mitm-scanner/issues) - Report issues and suggestions
-- [GitHub Discussions](https://github.com/G3G4X5X6/mitm-scanner/discussions) - Community discussions
-- [Contributing Guide](./dev/contributing.md) - Participate in development
+- [GitHub Issues](https://github.com/gougu-security/flowmind/issues) - Report product issues and suggestions
+- [Docs Issues](https://github.com/gougu-security/flowmind-docs/issues) - Report documentation issues
+- [Contributing Guide](./dev/contributing.md) - Contribute to documentation

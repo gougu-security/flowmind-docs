@@ -1,10 +1,12 @@
 import { defineConfig } from 'vitepress'
 
-const GITHUB_REPO = 'G3G4X5X6/mitm-scanner'
-const GITHUB_URL = `https://github.com/${GITHUB_REPO}`
+const DOCS_REPO = 'gougu-security/flowmind-docs'
+const PRODUCT_REPO = 'gougu-security/flowmind'
+const DOCS_URL = `https://github.com/${DOCS_REPO}`
+const PRODUCT_URL = `https://github.com/${PRODUCT_REPO}`
 
 // GitHub Pages 项目页部署时使用子路径；本地开发保持根路径
-const base = process.env.GITHUB_ACTIONS ? '/mitm-scanner/' : '/'
+const base = process.env.GITHUB_ACTIONS ? '/flowmind-docs/' : '/'
 
 // 中文侧边栏
 const zhSidebar = {
@@ -152,10 +154,10 @@ const sharedThemeConfig = {
   logo: '/logo.svg',
   siteTitle: 'FlowMind',
   socialLinks: [
-    { icon: 'github', link: GITHUB_URL }
+    { icon: 'github', link: DOCS_URL }
   ],
   footer: {
-    message: 'Released under the MIT License.',
+    message: 'Released under the Apache License 2.0.',
     copyright: 'Copyright © 2024–2026 FlowMind'
   },
   appearance: 'dark' as const,
@@ -199,7 +201,7 @@ export default defineConfig({
             text: 'v0.3.0',
             items: [
               { text: '更新日志', link: '/dev/roadmap' },
-              { text: 'GitHub', link: GITHUB_URL }
+              { text: 'GitHub', link: PRODUCT_URL }
             ]
           }
         ],
@@ -220,7 +222,7 @@ export default defineConfig({
           }
         },
         editLink: {
-          pattern: `${GITHUB_URL}/edit/main/docs-site/docs/:path`,
+          pattern: `${DOCS_URL}/edit/main/docs/:path`,
           text: '在 GitHub 上编辑此页面'
         },
         search: {
@@ -260,7 +262,7 @@ export default defineConfig({
             text: 'v0.3.0',
             items: [
               { text: 'Changelog', link: '/en/dev/roadmap' },
-              { text: 'GitHub', link: GITHUB_URL }
+              { text: 'GitHub', link: PRODUCT_URL }
             ]
           }
         ],
@@ -281,7 +283,7 @@ export default defineConfig({
           }
         },
         editLink: {
-          pattern: `${GITHUB_URL}/edit/main/docs-site/docs/:path`,
+          pattern: `${DOCS_URL}/edit/main/docs/:path`,
           text: 'Edit this page on GitHub'
         },
         search: {

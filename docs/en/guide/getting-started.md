@@ -6,7 +6,7 @@ This chapter explains how to install and start FlowMind for the first time.
 
 ### Download from GitHub Releases
 
-1. Visit the [GitHub Releases](https://github.com/G3G4X5X6/mitm-scanner/releases) page
+1. Visit the [GitHub Releases](https://github.com/gougu-security/flowmind/releases) page
 2. Download the installer for your operating system:
    - **Windows**: `FlowMind-x.x.x-x64-setup.exe`
    - **macOS**: `FlowMind-x.x.x.dmg`

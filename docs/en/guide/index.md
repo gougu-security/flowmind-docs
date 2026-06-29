@@ -4,7 +4,7 @@ Welcome to FlowMind! This guide will help you get started with this AI-Native Ap
 
 ## What is FlowMind?
 
-FlowMind is a desktop application security workbench based on Tauri v2 + React + TypeScript + Rust. It integrates the following core capabilities:
+FlowMind is a desktop application security workbench. It integrates the following core capabilities:
 
 - **Proxy Capture**: Built-in MITM engine supporting HTTP/HTTPS/WebSocket
 - **Traffic Analysis**: Real-time forwarder, interceptor, request details
@@ -56,5 +56,5 @@ Want to get started quickly? Check out the [Installation](./getting-started.md) 
 If you encounter issues, you can get help through:
 
 1. **Documentation**: Browse the sections of this guide
-2. **GitHub Issues**: [Submit an issue](https://github.com/G3G4X5X6/mitm-scanner/issues)
-3. **Community Discussion**: [GitHub Discussions](https://github.com/G3G4X5X6/mitm-scanner/discussions)
+2. **GitHub Issues**: [Report product issues](https://github.com/gougu-security/flowmind/issues)
+3. **Docs Issues**: [Report documentation issues](https://github.com/gougu-security/flowmind-docs/issues)
