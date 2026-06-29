@@ -46,9 +46,35 @@
   border-radius: 4px;
 }
 
-/* ---- 滚动条（侧栏 / 大纲 / 页面统一细滚动条） ---- */
+/* 侧栏 / 大纲滚动区域避开固定顶栏 */
+@media (min-width: 960px) {
+  .VPSidebar {
+    top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px));
+    padding-top: 32px;
+  }
+
+  .VPSidebar .curtain {
+    display: none;
+  }
+
+  .VPDoc .aside-container {
+    top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px));
+    padding-top: calc(var(--vp-doc-top-height, 0px) + 48px);
+    height: calc(100vh - var(--vp-nav-height) - var(--vp-layout-top-height, 0px));
+  }
+
+  /* 顶栏右侧留出滚动条宽度，避免固定导航遮挡页面滚动条 */
+  .VPNav {
+    left: 0;
+    right: var(--vp-scrollbar-size);
+    width: auto;
+  }
+}
+
+/* ---- 滚动条（全站统一细滚动条） ---- */
 
 html {
+  scrollbar-gutter: stable;
   scrollbar-width: thin;
   scrollbar-color: var(--vp-scrollbar-thumb) var(--vp-scrollbar-track);
 }
@@ -71,53 +97,57 @@ html::-webkit-scrollbar-thumb:hover {
   background: var(--vp-scrollbar-thumb-hover);
 }
 
+.vp-scrollbar,
 .VPSidebar,
 .VPNavScreen,
-.VPDoc .aside-container {
-  scrollbar-width: thin !important;
-  scrollbar-color: var(--vp-scrollbar-thumb) var(--vp-scrollbar-track);
-}
-
-.VPSidebar::-webkit-scrollbar,
-.VPNavScreen::-webkit-scrollbar,
-.VPDoc .aside-container::-webkit-scrollbar {
-  display: block !important;
-  width: var(--vp-scrollbar-size);
-  height: var(--vp-scrollbar-size);
-}
-
-.VPSidebar::-webkit-scrollbar-track,
-.VPNavScreen::-webkit-scrollbar-track,
-.VPDoc .aside-container::-webkit-scrollbar-track {
-  background: var(--vp-scrollbar-track);
-}
-
-.VPSidebar::-webkit-scrollbar-thumb,
-.VPNavScreen::-webkit-scrollbar-thumb,
-.VPDoc .aside-container::-webkit-scrollbar-thumb {
-  border-radius: calc(var(--vp-scrollbar-size) / 2);
-  background: var(--vp-scrollbar-thumb);
-}
-
-.VPSidebar::-webkit-scrollbar-thumb:hover,
-.VPNavScreen::-webkit-scrollbar-thumb:hover,
-.VPDoc .aside-container::-webkit-scrollbar-thumb:hover {
-  background: var(--vp-scrollbar-thumb-hover);
-}
-
+.VPDoc .aside-container,
 .vp-doc div[class*='language-'] pre {
   scrollbar-width: thin;
   scrollbar-color: var(--vp-scrollbar-thumb) var(--vp-scrollbar-track);
 }
 
+.vp-scrollbar::-webkit-scrollbar,
+.VPSidebar::-webkit-scrollbar,
+.VPNavScreen::-webkit-scrollbar,
+.VPDoc .aside-container::-webkit-scrollbar,
 .vp-doc div[class*='language-'] pre::-webkit-scrollbar {
+  display: block;
   width: var(--vp-scrollbar-size);
   height: var(--vp-scrollbar-size);
 }
 
+.vp-scrollbar::-webkit-scrollbar-track,
+.VPSidebar::-webkit-scrollbar-track,
+.VPNavScreen::-webkit-scrollbar-track,
+.VPDoc .aside-container::-webkit-scrollbar-track,
+.vp-doc div[class*='language-'] pre::-webkit-scrollbar-track {
+  background: var(--vp-scrollbar-track);
+}
+
+.vp-scrollbar::-webkit-scrollbar-thumb,
+.VPSidebar::-webkit-scrollbar-thumb,
+.VPNavScreen::-webkit-scrollbar-thumb,
+.VPDoc .aside-container::-webkit-scrollbar-thumb,
 .vp-doc div[class*='language-'] pre::-webkit-scrollbar-thumb {
   border-radius: calc(var(--vp-scrollbar-size) / 2);
   background: var(--vp-scrollbar-thumb);
+}
+
+.vp-scrollbar::-webkit-scrollbar-thumb:hover,
+.VPSidebar::-webkit-scrollbar-thumb:hover,
+.VPNavScreen::-webkit-scrollbar-thumb:hover,
+.VPDoc .aside-container::-webkit-scrollbar-thumb:hover,
+.vp-doc div[class*='language-'] pre::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-scrollbar-thumb-hover);
+}
+
+/* 覆盖 VitePress 默认隐藏右侧大纲滚动条 */
+.VPDoc .aside-container {
+  scrollbar-width: thin !important;
+}
+
+.VPDoc .aside-container::-webkit-scrollbar {
+  display: block !important;
 }
 
 /* ---- 首页 ---- */
