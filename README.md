@@ -3,7 +3,6 @@
 **AI-Native 应用安全平台** — 集成 MITM 代理、流量分析、模糊测试、安全扫描与 AI 推理的一站式安全工作台。
 
 [![在线文档](https://img.shields.io/badge/文档-在线阅读-6366f1?style=flat-square)](https://gougu-security.github.io/flowmind-docs/)
-[![Release](https://img.shields.io/github/v/release/gougu-security/flowmind?style=flat-square)](https://github.com/gougu-security/flowmind/releases)
 
 ---
 
