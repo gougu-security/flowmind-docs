@@ -46,21 +46,43 @@
   border-radius: 4px;
 }
 
-/* 侧栏 / 大纲滚动区域避开固定顶栏 */
+/* 侧栏 / 大纲：滚动条限定在顶栏下方的可视区域内 */
 @media (min-width: 960px) {
-  .VPSidebar {
-    top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px));
-    padding-top: 32px;
+  .Layout .VPSidebar {
+    top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) !important;
+    bottom: 0;
+    padding: 0 32px !important;
+    overflow: hidden !important;
+    overscroll-behavior: auto;
   }
 
-  .VPSidebar .curtain {
+  .Layout .VPSidebar .curtain {
     display: none;
   }
 
+  .Layout .VPSidebar .nav {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 32px 0 96px;
+  }
+
   .VPDoc .aside-container {
-    top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px));
+    top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) !important;
+    height: calc(100vh - var(--vp-nav-height) - var(--vp-layout-top-height, 0px)) !important;
+    padding-top: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .VPDoc .aside-content {
+    height: 100%;
+    min-height: 0 !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
     padding-top: calc(var(--vp-doc-top-height, 0px) + 48px);
-    height: calc(100vh - var(--vp-nav-height) - var(--vp-layout-top-height, 0px));
+    padding-bottom: 32px;
   }
 
   /* 顶栏右侧留出滚动条宽度，避免固定导航遮挡页面滚动条 */
@@ -68,6 +90,13 @@
     left: 0;
     right: var(--vp-scrollbar-size);
     width: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .Layout .VPSidebar {
+    padding-left: max(32px, calc((100% - (var(--vp-layout-max-width) - 64px)) / 2)) !important;
+    padding-right: 32px !important;
   }
 }
 
@@ -100,7 +129,9 @@ html::-webkit-scrollbar-thumb:hover {
 .vp-scrollbar,
 .VPSidebar,
 .VPNavScreen,
+.VPSidebar .nav,
 .VPDoc .aside-container,
+.VPDoc .aside-content,
 .vp-doc div[class*='language-'] pre {
   scrollbar-width: thin;
   scrollbar-color: var(--vp-scrollbar-thumb) var(--vp-scrollbar-track);
@@ -109,7 +140,9 @@ html::-webkit-scrollbar-thumb:hover {
 .vp-scrollbar::-webkit-scrollbar,
 .VPSidebar::-webkit-scrollbar,
 .VPNavScreen::-webkit-scrollbar,
+.VPSidebar .nav::-webkit-scrollbar,
 .VPDoc .aside-container::-webkit-scrollbar,
+.VPDoc .aside-content::-webkit-scrollbar,
 .vp-doc div[class*='language-'] pre::-webkit-scrollbar {
   display: block;
   width: var(--vp-scrollbar-size);
@@ -119,7 +152,9 @@ html::-webkit-scrollbar-thumb:hover {
 .vp-scrollbar::-webkit-scrollbar-track,
 .VPSidebar::-webkit-scrollbar-track,
 .VPNavScreen::-webkit-scrollbar-track,
+.VPSidebar .nav::-webkit-scrollbar-track,
 .VPDoc .aside-container::-webkit-scrollbar-track,
+.VPDoc .aside-content::-webkit-scrollbar-track,
 .vp-doc div[class*='language-'] pre::-webkit-scrollbar-track {
   background: var(--vp-scrollbar-track);
 }
@@ -127,7 +162,9 @@ html::-webkit-scrollbar-thumb:hover {
 .vp-scrollbar::-webkit-scrollbar-thumb,
 .VPSidebar::-webkit-scrollbar-thumb,
 .VPNavScreen::-webkit-scrollbar-thumb,
+.VPSidebar .nav::-webkit-scrollbar-thumb,
 .VPDoc .aside-container::-webkit-scrollbar-thumb,
+.VPDoc .aside-content::-webkit-scrollbar-thumb,
 .vp-doc div[class*='language-'] pre::-webkit-scrollbar-thumb {
   border-radius: calc(var(--vp-scrollbar-size) / 2);
   background: var(--vp-scrollbar-thumb);
@@ -136,17 +173,38 @@ html::-webkit-scrollbar-thumb:hover {
 .vp-scrollbar::-webkit-scrollbar-thumb:hover,
 .VPSidebar::-webkit-scrollbar-thumb:hover,
 .VPNavScreen::-webkit-scrollbar-thumb:hover,
+.VPSidebar .nav::-webkit-scrollbar-thumb:hover,
 .VPDoc .aside-container::-webkit-scrollbar-thumb:hover,
+.VPDoc .aside-content::-webkit-scrollbar-thumb:hover,
 .vp-doc div[class*='language-'] pre::-webkit-scrollbar-thumb:hover {
   background: var(--vp-scrollbar-thumb-hover);
 }
 
-/* 覆盖 VitePress 默认隐藏右侧大纲滚动条 */
-.VPDoc .aside-container {
+/* 桌面端：滚动发生在内部容器，外层不显示滚动条 */
+@media (min-width: 960px) {
+  .Layout .VPSidebar {
+    scrollbar-width: none;
+  }
+
+  .Layout .VPSidebar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .VPDoc .aside-container {
+    scrollbar-width: none !important;
+  }
+
+  .VPDoc .aside-container::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+
+/* 覆盖 VitePress 默认隐藏右侧大纲滚动条（作用于 aside-content） */
+.VPDoc .aside-content {
   scrollbar-width: thin !important;
 }
 
-.VPDoc .aside-container::-webkit-scrollbar {
+.VPDoc .aside-content::-webkit-scrollbar {
   display: block !important;
 }
 
