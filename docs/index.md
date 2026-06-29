@@ -17,7 +17,7 @@ hero:
       link: /guide/
     - theme: alt
       text: GitHub
-      link: https://github.com/gougu-security/flowmind
+      link: https://github.com/gougu-security/flowmind-docs
 
 features:
   - icon: 🔍
@@ -77,6 +77,6 @@ features:
 
 ## 社区
 
-- [GitHub Issues](https://github.com/gougu-security/flowmind/issues) - 报告产品问题与建议
+- [GitHub Issues](https://github.com/gougu-security/flowmind-docs/issues) - 报告产品问题与建议
 - [文档 Issues](https://github.com/gougu-security/flowmind-docs/issues) - 报告文档问题
 - [贡献指南](./dev/contributing.md) - 参与文档贡献

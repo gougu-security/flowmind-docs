@@ -53,7 +53,7 @@
 
 ## 快速上手
 
-1. 前往 [Releases](https://github.com/gougu-security/flowmind/releases) 下载对应平台安装包
+1. 前往 [Releases](https://github.com/gougu-security/flowmind-docs/releases) 下载对应平台安装包
 2. 阅读 [快速开始](https://gougu-security.github.io/flowmind-docs/guide/getting-started) 完成安装与证书配置
 3. 按需查阅 [用户指南](https://gougu-security.github.io/flowmind-docs/guide/) 探索各功能模块
 
