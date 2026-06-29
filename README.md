@@ -69,9 +69,7 @@
 | 资源 | 地址 |
 |------|------|
 | 在线文档 | https://gougu-security.github.io/flowmind-docs/ |
-| 产品仓库 | https://github.com/gougu-security/flowmind |
-| 文档仓库 | https://github.com/gougu-security/flowmind-docs |
-| 问题反馈 | https://github.com/gougu-security/flowmind/issues |
+| 问题反馈 | https://github.com/gougu-security/flowmind-docs/issues |
 
 ---
 
