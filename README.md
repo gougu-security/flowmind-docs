@@ -1,117 +1,84 @@
-# FlowMind 文档站点
+# FlowMind
 
-基于 VitePress 构建的 FlowMind 产品用户文档站点，支持中英文双语。
+**AI-Native 应用安全平台** — 集成 MITM 代理、流量分析、模糊测试、安全扫描与 AI 推理的一站式安全工作台。
 
-## 目录结构
+[![在线文档](https://img.shields.io/badge/文档-在线阅读-6366f1?style=flat-square)](https://gougu-security.github.io/flowmind-docs/)
+[![Release](https://img.shields.io/github/v/release/gougu-security/flowmind?style=flat-square)](https://github.com/gougu-security/flowmind/releases)
 
-```
-flowmind-docs/
-├── .github/workflows/deploy.yml  # GitHub Actions 部署配置
-├── package.json                  # 项目配置
-├── pnpm-lock.yaml               # 依赖锁定文件
-├── README.md                    # 本文件
-└── docs/                        # 文档源文件
-    ├── .vitepress/              # VitePress 配置
-    │   ├── config.ts            # 主配置文件
-    │   └── theme/               # 主题配置
-    ├── public/                  # 静态资源
-    │   ├── logo.svg             # Logo
-    │   ├── favicon.svg          # Favicon
-    │   └── screenshots/         # 产品截图
-    ├── index.md                 # 中文首页
-    ├── guide/                   # 用户指南（中文）
-    ├── dev/                     # 开发者文档（中文）
-    ├── api/                     # 商业化与合作（中文）
-    └── en/                      # 英文文档
-```
+---
 
-## 快速开始
+## 为什么选择 FlowMind？
 
-### 安装依赖
+传统安全工具擅长抓包与重放，却难以将流量、漏洞与 AI 推理串联成完整工作流。FlowMind 从设计之初即面向 **AI-Native 安全测试**：在本地完成流量捕获、主动/被动检测、模糊测试与智能分析，数据留在你的设备上，无需依赖云端。
 
-```bash
-pnpm install
-```
+| 痛点 | FlowMind 的做法 |
+|------|-----------------|
+| 工具链割裂 | 代理、重放、Fuzz、扫描、报告在同一工作台完成 |
+| 海量流量难浏览 | 高性能引擎 + 虚拟列表，流畅处理大规模请求 |
+| 规则难以扩展 | WASM / 声明式插件，按需定制扫描能力 |
+| AI 与测试脱节 | 多 Provider、知识库、攻击图谱与安全记忆深度集成 |
 
-### 本地开发
+## 核心能力
 
-```bash
-pnpm dev
-```
+### 智能代理抓包
 
-访问 `http://localhost:4174/` 查看文档站点。
+内嵌高性能 MITM 引擎，支持 HTTP / HTTPS / WebSocket 实时捕获，CA 证书自动管理，流量详情一目了然。
 
-> 端口 4174 用于开发服务器，4175 用于预览服务器。
+### 流量转发与拦截
 
-### 构建
+实时转发器、请求详情面板，以及 Hold / Modify / Drop 拦截控制，精确掌握每一个请求。
 
-```bash
-pnpm build
-```
+### 请求重放与模糊测试
 
-构建产物位于 `docs/.vitepress/dist/` 目录。
+原始报文重放、结构化请求编辑，多策略 Fuzz（IDOR、Auth Strip、Header 词表等），支持并发与限速。
 
-### 预览构建结果
+### 安全扫描引擎
 
-```bash
-pnpm preview
-```
+内置被动扫描规则，配合 WASM / 声明式工作区插件，自动发现敏感信息泄露、Cookie 与传输层安全问题。
 
-## 部署
+### AI 安全分析
 
-### GitHub Pages 自动部署
+多 Provider 对话、Tool Calling、MCP 协议、知识库 / RAG、安全记忆与攻击图谱，让 AI 真正参与测试决策。
 
-推送到 `main` 分支后，GitHub Actions 会自动构建并部署文档。
+### 项目管理与报告
 
-- 部署地址：`https://gougu-security.github.io/flowmind-docs/`
-- CI 会自动设置 VitePress `base: /flowmind-docs/`，本地开发无需修改
+项目级数据隔离、素材剪藏、JSON / PDF 报告导出，轻松沉淀与交付测试成果。
 
-**首次启用步骤（必须手动完成一次）：**
+## 适用场景
 
-1. 打开仓库 [Settings → Pages](https://github.com/gougu-security/flowmind-docs/settings/pages)
-2. **Build and deployment → Source** 选择 **GitHub Actions**（不要选 Deploy from branch）
-3. 若为组织仓库，需组织管理员在组织 Settings → Pages 中允许仓库使用 Pages
-4. 推送代码到 `main` 分支，或手动运行 Actions 中的 **Deploy docs to GitHub Pages** workflow
+- Web / API 渗透测试与漏洞挖掘
+- 移动应用与桌面客户端流量分析
+- 安全研究、红队演练与漏洞验证
+- 需要可扩展扫描规则的安全团队
+- 希望将 AI 引入测试流程的安全工程师
 
-> 若未执行第 1–2 步，workflow 会在部署阶段报 `Get Pages site failed` / `Not Found`。
+## 快速上手
 
-### 手动部署
+1. 前往 [Releases](https://github.com/gougu-security/flowmind/releases) 下载对应平台安装包
+2. 阅读 [快速开始](https://gougu-security.github.io/flowmind-docs/guide/getting-started) 完成安装与证书配置
+3. 按需查阅 [用户指南](https://gougu-security.github.io/flowmind-docs/guide/) 探索各功能模块
 
-```bash
-pnpm build
-# 将 docs/.vitepress/dist/ 内容部署到静态托管
-```
+插件开发者请参阅 [插件开发文档](https://gougu-security.github.io/flowmind-docs/dev/plugins/wasm)。
 
-## 文档编写指南
+## 企业与合作
 
-### 添加新页面
+需要私有化部署、定制开发或企业授权？欢迎通过 [合作开发](https://gougu-security.github.io/flowmind-docs/api/) 与 [企业版本](https://gougu-security.github.io/flowmind-docs/api/enterprise) 页面联系我们。
 
-1. 在相应目录下创建 `.md` 文件
-2. 在 `docs/.vitepress/config.ts` 的侧边栏配置中添加链接
-3. 同时在中文和英文目录下创建对应文件
+## 链接
 
-### 多语言支持
+| 资源 | 地址 |
+|------|------|
+| 在线文档 | https://gougu-security.github.io/flowmind-docs/ |
+| 产品仓库 | https://github.com/gougu-security/flowmind |
+| 文档仓库 | https://github.com/gougu-security/flowmind-docs |
+| 问题反馈 | https://github.com/gougu-security/flowmind/issues |
 
-- 中文文档放在 `docs/guide/`、`docs/dev/`、`docs/api/`
-- 英文文档放在 `docs/en/` 目录下
-- 保持中英文文档结构一致
+---
 
-### 公开文档与安全
+<p align="center">
+  <sub>FlowMind — 让应用安全测试更智能、更高效</sub>
+</p>
 
-本仓库面向**终端用户**与**插件开发者**。除插件文档中的必要示例外，**不得**在公开文档中写入宿主程序代码或实现细节：
-
-| 允许公开 | 禁止公开 |
-|----------|----------|
-| 用户指南（界面操作） | 宿主源码、IPC 命令、事件名 |
-| WASM / 声明式插件示例 | 数据库表结构、内部模块路径 |
-| 产品级架构概览（无源码） | 许可验证、门控、服务端实现 |
-| 商业化与合作说明 | 完整 JSON Schema、未授权 API 契约 |
-
-撰写文档时若涉及实现细节，默认**不写**；仅插件开发文档可包含插件运行时所需的清单、WASM 接口与规则 YAML/JSON 示例。
-
-## 相关链接
-
-- [在线文档](https://gougu-security.github.io/flowmind-docs/)
-- [VitePress 官方文档](https://vitepress.dev/)
-- [FlowMind 产品仓库](https://github.com/gougu-security/flowmind)
-- [文档仓库](https://github.com/gougu-security/flowmind-docs)
+<p align="center">
+  <sub>文档站点开发说明见 <a href="./dev.md">dev.md</a></sub>
+</p>
