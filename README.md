@@ -4,6 +4,9 @@
 
 [![在线文档](https://img.shields.io/badge/文档-在线阅读-6366f1?style=flat-square)](https://gougu-security.github.io/flowmind-docs/)
 
+
+![FlowMind 转发器界面](./docs/public/screenshots/forwarder-home.png)
+
 ---
 
 ## 为什么选择 FlowMind？

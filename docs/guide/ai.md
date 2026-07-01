@@ -2,6 +2,8 @@
 
 FlowMind 是一个 AI-Native 安全平台，集成了多种 AI 能力帮助安全测试人员更高效地发现和验证漏洞。
 
+![AI-会话](/screenshots/AI-会话.png)
+
 ## 功能概览
 
 | 功能 | 说明 |

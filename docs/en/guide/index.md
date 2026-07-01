@@ -14,6 +14,8 @@ FlowMind is a desktop application security workbench. It integrates the followin
 - **AI Analysis**: Multi-provider chat, tool calling, knowledge base, attack graph
 - **Report Export**: JSON/PDF format with content clipping
 
+![FlowMind forwarder interface](/screenshots/forwarder-home.png)
+
 ## System Requirements
 
 | Item | Requirement |

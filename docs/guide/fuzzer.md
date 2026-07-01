@@ -2,6 +2,8 @@
 
 模糊器用于对 HTTP 请求进行受控变异测试，自动发现潜在的安全漏洞。
 
+![模糊器](/screenshots/模糊器.png)
+
 ## 功能概述
 
 - **多策略变异**：支持 IDOR、Auth Strip、Header 词表等策略

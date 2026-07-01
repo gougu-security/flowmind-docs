@@ -96,6 +96,21 @@ pnpm build
 - 英文文档放在 `docs/en/` 目录下
 - 保持中英文文档结构一致
 
+### 插入图片
+
+1. 将截图放入 `docs/public/screenshots/`（文件名建议英文，如 `forwarder-home.png`）
+2. 在 Markdown 中用绝对路径引用（VitePress 会自动处理 GitHub Pages 的 `base` 前缀）：
+
+```md
+![转发器界面](/screenshots/forwarder-home.png)
+```
+
+3. 可选：控制宽度
+
+```md
+<img src="/screenshots/forwarder-home.png" alt="转发器界面" width="720" />
+```
+
 ### 公开文档与安全
 
 本仓库面向**终端用户**与**插件开发者**。除插件文档中的必要示例外，**不得**在公开文档中写入宿主程序代码或实现细节：

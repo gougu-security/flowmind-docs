@@ -57,6 +57,10 @@ features:
 | AI | 多 Provider、工具调用、向量检索与知识库 |
 | 数据存储 | 本地数据库 |
 
+
+![FlowMind 转发器界面](/screenshots/forwarder-home.png)
+
+
 ## 为什么选择 FlowMind？
 
 ### 🚀 性能卓越
