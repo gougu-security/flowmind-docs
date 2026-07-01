@@ -1,6 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <rect width="32" height="32" rx="6" fill="#6366f1"/>
-  <path d="M10 12C10 12 14 8 18 12C22 16 18 20 14 20C10 20 8 18 8 16" stroke="white" stroke-width="2" stroke-linecap="round"/>
-  <path d="M22 12C22 12 18 8 14 12C10 16 14 20 18 20C22 20 24 18 24 16" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
-  <circle cx="16" cy="16" r="2" fill="white"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="FlowMind">
+  <defs>
+    <linearGradient id="fm-g" x1="96" y1="416" x2="416" y2="96" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7aa2f7"/>
+      <stop offset="0.55" stop-color="#9d7cd8"/>
+      <stop offset="1" stop-color="#bb9af7"/>
+    </linearGradient>
+    <radialGradient id="fm-glow" cx="256" cy="256" r="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7aa2f7" stop-opacity="0.28"/>
+      <stop offset="0.65" stop-color="#9d7cd8" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#13141c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- 整幅不透明底：避免圆角 rect 在四角留透明，macOS 打包后 Dock 出现白/灰边 -->
+  <rect width="512" height="512" fill="#13141c"/>
+  <circle cx="256" cy="256" r="140" fill="url(#fm-glow)"/>
+  <!-- 四角取景括号：检视 / 拦截语义 -->
+  <g fill="none" stroke="url(#fm-g)" stroke-width="22" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M 132 172 L 132 132 L 172 132"/>
+    <path d="M 340 132 L 380 132 L 380 172"/>
+    <path d="M 132 340 L 132 380 L 172 380"/>
+    <path d="M 380 340 L 380 380 L 340 380"/>
+  </g>
+  <!-- 十字管道汇入中心（流量汇聚） -->
+  <g stroke="url(#fm-g)" stroke-width="18" stroke-linecap="square">
+    <line x1="256" y1="136" x2="256" y2="210"/>
+    <line x1="256" y1="302" x2="256" y2="376"/>
+    <line x1="136" y1="256" x2="210" y2="256"/>
+    <line x1="302" y1="256" x2="376" y2="256"/>
+  </g>
+  <!-- 流向箭头：强调 Flow 语义，小尺寸仍可辨识 -->
+  <g fill="none" stroke="url(#fm-g)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 246 220 L 256 210 L 266 220"/>
+    <path d="M 246 292 L 256 302 L 266 292"/>
+    <path d="M 220 246 L 210 256 L 220 266"/>
+    <path d="M 292 246 L 302 256 L 292 266"/>
+  </g>
+  <!-- 中心处理节点 -->
+  <rect x="214" y="214" width="84" height="84" rx="14" fill="#1a1b26" stroke="url(#fm-g)" stroke-width="8"/>
+  <rect x="234" y="234" width="44" height="44" rx="8" fill="url(#fm-g)"/>
 </svg>

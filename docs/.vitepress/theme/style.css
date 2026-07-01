@@ -13,10 +13,14 @@
   --vp-nav-height: 56px;
   --vp-layout-max-width: 1440px;
 
-  --vp-scrollbar-size: 6px;
-  --vp-scrollbar-thumb: color-mix(in srgb, var(--vp-c-text-3) 50%, transparent);
-  --vp-scrollbar-thumb-hover: color-mix(in srgb, var(--vp-c-text-2) 65%, transparent);
+  --vp-scrollbar-size: 7px;
+  --vp-scrollbar-thumb: color-mix(in srgb, var(--vp-c-text-3) 34%, transparent);
+  --vp-scrollbar-thumb-hover: color-mix(in srgb, var(--vp-c-brand-1) 72%, var(--vp-c-text-2));
   --vp-scrollbar-track: transparent;
+  --fm-nav-bg: color-mix(in srgb, var(--vp-c-bg) 86%, transparent);
+  --fm-nav-border: color-mix(in srgb, var(--vp-c-divider) 80%, transparent);
+  --fm-nav-control-bg: color-mix(in srgb, var(--vp-c-bg-soft) 82%, transparent);
+  --fm-nav-control-border: color-mix(in srgb, var(--vp-c-divider) 72%, transparent);
 }
 
 .dark {
@@ -26,20 +30,97 @@
   --vp-c-brand-soft: rgba(129, 140, 248, 0.14);
 
   --vp-c-bg-soft: rgba(99, 102, 241, 0.06);
+  --fm-nav-bg: color-mix(in srgb, var(--vp-c-bg) 78%, transparent);
+  --fm-nav-control-bg: color-mix(in srgb, var(--vp-c-bg-soft) 58%, transparent);
+  --fm-nav-control-border: color-mix(in srgb, var(--vp-c-divider) 68%, transparent);
 }
 
 /* ---- 导航与布局 ---- */
 
 .VPNav {
-  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--fm-nav-border);
+  background: var(--fm-nav-bg);
+  backdrop-filter: saturate(140%) blur(16px);
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--vp-c-bg) 70%, transparent);
+}
+
+.VPNavBar {
+  padding: 0 20px;
+}
+
+.VPNavBar .container {
+  max-width: var(--vp-layout-max-width);
+}
+
+.VPNavBar.has-sidebar .content {
+  border-bottom: 0;
+}
+
+.VPNavBarTitle {
+  border-bottom: 0;
+}
+
+.VPNavBarTitle .title {
+  gap: 10px;
+  min-height: var(--vp-nav-height);
+  border-bottom: 0;
+  font-weight: 700;
+}
+
+.VPNavBarTitle .logo {
+  width: 28px;
+  height: 28px;
+}
+
+.VPNavBarMenu {
+  gap: 4px;
+}
+
+.VPNavBarMenuLink,
+.VPNavBarMenuGroup .button {
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 6px;
+  color: var(--vp-c-text-2);
+  font-weight: 600;
+  letter-spacing: 0;
+  transition: color 0.18s ease, background-color 0.18s ease;
+}
+
+.VPNavBarMenuLink:hover,
+.VPNavBarMenuGroup .button:hover {
+  background: var(--fm-nav-control-bg);
+  color: var(--vp-c-text-1);
+}
+
+.VPNavBarMenuLink.active {
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+}
+
+.VPNavBarSearch {
+  padding-left: 8px;
+}
+
+.VPNavBarSearch .DocSearch-Button,
+.VPNavBarSearch .local-search-button {
+  height: 34px;
+  border: 1px solid var(--fm-nav-control-border);
+  border-radius: 7px;
+  background: var(--fm-nav-control-bg);
+}
+
+.VPNavBarSearch .DocSearch-Button:hover,
+.VPNavBarSearch .local-search-button:hover {
+  border-color: color-mix(in srgb, var(--vp-c-brand-1) 45%, var(--fm-nav-control-border));
 }
 
 .VPContent.has-sidebar {
-  padding-inline: 24px 32px;
+  padding-inline: 28px 36px;
 }
 
 .VPDoc .container {
-  max-width: 860px;
+  max-width: 900px;
 }
 
 .VPDoc .aside-cur {
@@ -52,6 +133,8 @@
     top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) !important;
     bottom: 0;
     padding: 0 32px !important;
+    border-right: 1px solid color-mix(in srgb, var(--vp-c-divider) 70%, transparent);
+    background: color-mix(in srgb, var(--vp-c-bg) 96%, transparent);
     overflow: hidden !important;
     overscroll-behavior: auto;
   }
@@ -65,7 +148,32 @@
     overflow-x: hidden;
     overflow-y: auto;
     overscroll-behavior: contain;
-    padding: 32px 0 96px;
+    padding: 28px 4px 96px 0;
+  }
+
+  .VPSidebarItem.level-0 {
+    padding-bottom: 16px;
+  }
+
+  .VPSidebarItem.level-0 > .item > .text {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  .VPSidebarItem.level-1 .link {
+    min-height: 32px;
+    border-radius: 6px;
+    transition: background-color 0.18s ease, color 0.18s ease;
+  }
+
+  .VPSidebarItem.level-1 .link:hover {
+    background: color-mix(in srgb, var(--vp-c-bg-soft) 78%, transparent);
+  }
+
+  .VPSidebarItem.level-1.is-active > .item .link {
+    background: var(--vp-c-brand-soft);
   }
 
   .VPDoc .aside-container {
@@ -81,8 +189,13 @@
     overflow-x: hidden;
     overflow-y: auto;
     overscroll-behavior: contain;
-    padding-top: calc(var(--vp-doc-top-height, 0px) + 48px);
+    padding-top: calc(var(--vp-doc-top-height, 0px) + 44px);
     padding-bottom: 32px;
+  }
+
+  .VPDocAsideOutline .content {
+    padding-left: 14px;
+    border-left-color: color-mix(in srgb, var(--vp-c-divider) 75%, transparent);
   }
 
   /* 顶栏右侧留出滚动条宽度，避免固定导航遮挡页面滚动条 */
@@ -118,8 +231,10 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  border-radius: calc(var(--vp-scrollbar-size) / 2);
+  border: 2px solid transparent;
+  border-radius: 999px;
   background: var(--vp-scrollbar-thumb);
+  background-clip: content-box;
 }
 
 html::-webkit-scrollbar-thumb:hover {
@@ -166,8 +281,10 @@ html::-webkit-scrollbar-thumb:hover {
 .VPDoc .aside-container::-webkit-scrollbar-thumb,
 .VPDoc .aside-content::-webkit-scrollbar-thumb,
 .vp-doc div[class*='language-'] pre::-webkit-scrollbar-thumb {
-  border-radius: calc(var(--vp-scrollbar-size) / 2);
+  border: 2px solid transparent;
+  border-radius: 999px;
   background: var(--vp-scrollbar-thumb);
+  background-clip: content-box;
 }
 
 .vp-scrollbar::-webkit-scrollbar-thumb:hover,
@@ -216,7 +333,7 @@ html::-webkit-scrollbar-thumb:hover {
 
 .VPHero .name {
   font-weight: 800;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 .VPHero .text {
@@ -272,7 +389,7 @@ html::-webkit-scrollbar-thumb:hover {
 /* ---- 文档正文 ---- */
 
 .vp-doc h1 {
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 .vp-doc h2 {
@@ -351,6 +468,25 @@ html::-webkit-scrollbar-thumb:hover {
 
 .VPLocalSearchBox {
   border-radius: 12px;
+}
+
+@media (max-width: 959px) {
+  .VPNavBar {
+    padding: 0 14px;
+  }
+
+  .VPNavBarTitle .title {
+    min-width: 0;
+  }
+
+  .VPNavBarTitle .logo {
+    width: 26px;
+    height: 26px;
+  }
+
+  .VPContent.has-sidebar {
+    padding-inline: 18px;
+  }
 }
 
 /* ---- 页脚 ---- */
