@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 const DOCS_REPO = 'gougu-security/flowmind-docs'
-const PRODUCT_REPO = 'gougu-security/flowmind'
+const PRODUCT_REPO = 'gougu-security/flowmind-docs'
 const DOCS_URL = `https://github.com/${DOCS_REPO}`
 const PRODUCT_URL = `https://github.com/${PRODUCT_REPO}`
 
@@ -198,7 +198,7 @@ export default defineConfig({
           { text: '开发', link: '/dev/' },
           { text: '商业化', link: '/api/' },
           {
-            text: 'v0.3.0',
+            text: 'v1.0.0',
             items: [
               { text: '更新日志', link: '/dev/roadmap' },
               { text: 'GitHub', link: PRODUCT_URL }
@@ -259,7 +259,7 @@ export default defineConfig({
           { text: 'Dev', link: '/en/dev/' },
           { text: 'Commercial', link: '/en/api/' },
           {
-            text: 'v0.3.0',
+            text: 'v1.0.0',
             items: [
               { text: 'Changelog', link: '/en/dev/roadmap' },
               { text: 'GitHub', link: PRODUCT_URL }
