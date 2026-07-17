@@ -1,14 +1,10 @@
 <div align="center">
 
-<h1>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://media.x.ai/v1/website/spacexai-symbol-white-transparent-0c31957f.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://media.x.ai/v1/website/spacexai-symbol-black-transparent-6435cf42.png">
-    <img alt="SpaceXAI logo" src="https://media.x.ai/v1/website/spacexai-symbol-black-transparent-6435cf42.png" width="96">
-  </picture>
-  <br>
-  Grok Build (<code>grok</code>)
-</h1>
+<h1>Pentes Copilot</h1>
+
+<p><strong>基于 <a href="https://github.com/xai-org/grok-build">Grok Build</a> 的终端 AI 编码代理发行版</strong></p>
+
+<h2>Grok Build (<code>grok</code>)</h2>
 
 **Grok Build** is SpaceXAI's terminal-based AI coding agent. It runs as a
 full-screen TUI that understands your codebase, edits files, executes shell
@@ -33,6 +29,8 @@ runtime. It is synced periodically from the SpaceXAI monorepo.
 
 A small `SOURCE_REV` file at the root records the full monorepo commit SHA
 for the version of the code present in this tree.
+
+Fork 与上游同步说明见 [`FORK.md`](FORK.md)。
 
 </div>
 
