@@ -43,8 +43,8 @@ We welcome the following forms of technical cooperation:
 
 For commercial inquiries:
 
-- **Email**: business@flowmind.dev
-- **Website**: https://flowmind.dev
+- **Email**: contact@example.com
+- **Website**: https://example.com
 
 ::: tip Partnership Process
 1. Requirements Discussion → 2. Solution Design → 3. POC Validation → 4. Contract Signing → 5. Delivery

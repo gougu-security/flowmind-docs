@@ -74,9 +74,9 @@ FlowMind Enterprise provides comprehensive application security solutions for la
 
 ## Contact Us
 
-- **Business Inquiry**: business@flowmind.dev
-- **Technical Inquiry**: tech@flowmind.dev
-- **Website**: https://flowmind.dev
+- **Business Inquiry**: contact@example.com
+- **Technical Inquiry**: contact@example.com
+- **Website**: https://example.com
 
 ::: tip Schedule a Demo
 We offer free product demos and technical consultations to help you understand how FlowMind Enterprise meets your security needs.
