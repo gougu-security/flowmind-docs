@@ -35,18 +35,24 @@ Want to get started quickly? Check out the [Installation](./getting-started.md) 
 
 </div>
 
-### Core Features
+### Traffic Capture
 
 - [Proxy](./proxy.md) - Proxy engine configuration and usage
 - [Forwarder](./forwarder.md) - Real-time traffic viewing and filtering
 - [Interceptor](./interceptor.md) - Request interception and modification
+
+### Security Testing
+
 - [Repeater](./repeater.md) - Request replay and debugging
 - [Fuzzer](./fuzzer.md) - Fuzz testing configuration and execution
-
-### Advanced Features
-
 - [Plugins](./plugins.md) - Security scanning rules and tag scripts
+
+### AI Analysis
+
 - [AI Features](./ai.md) - AI security analysis capabilities
+
+### Deliverables
+
 - [Projects](./projects.md) - Project isolation and context management
 - [Reports](./reports.md) - Test report generation
 
