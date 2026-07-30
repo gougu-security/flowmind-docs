@@ -45,7 +45,6 @@ FlowMind 企业版提供更强大的能力：
 
 - **邮箱**：flowmind@qq.com
 - **官网**：https://gougu-security.github.io/flowmind-docs
-- **微信**：FlowMind_Business
 
 ::: tip 合作流程
 1. 需求沟通 → 2. 方案定制 → 3. POC 验证 → 4. 商务签约 → 5. 交付上线
