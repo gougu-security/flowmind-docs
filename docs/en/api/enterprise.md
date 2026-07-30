@@ -76,7 +76,7 @@ FlowMind Enterprise provides comprehensive application security solutions for la
 
 - **Business Inquiry**: flowmind@qq.com
 - **Technical Inquiry**: flowmind@qq.com
-- **Website**: https://flowmind.dev
+- **Website**: https://gougu-security.github.io/flowmind-docs
 
 ::: tip Schedule a Demo
 We offer free product demos and technical consultations to help you understand how FlowMind Enterprise meets your security needs.

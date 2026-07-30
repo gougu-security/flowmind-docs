@@ -44,7 +44,7 @@ FlowMind 企业版提供更强大的能力：
 如有商业合作需求，请通过以下方式联系：
 
 - **邮箱**：flowmind@qq.com
-- **官网**：https://flowmind.dev
+- **官网**：https://gougu-security.github.io/flowmind-docs
 - **微信**：FlowMind_Business
 
 ::: tip 合作流程

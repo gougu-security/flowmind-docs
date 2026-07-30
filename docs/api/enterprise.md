@@ -76,7 +76,7 @@ FlowMind 企业版为大型组织提供全方位的应用安全解决方案。
 
 - **商务咨询**：flowmind@qq.com
 - **技术咨询**：flowmind@qq.com
-- **官网**：https://flowmind.dev
+- **官网**：https://gougu-security.github.io/flowmind-docs
 
 ::: tip 预约演示
 我们提供免费的产品演示和技术咨询，帮助您了解 FlowMind 企业版如何满足您的安全需求。
