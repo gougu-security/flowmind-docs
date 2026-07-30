@@ -7,18 +7,17 @@ Public developer documentation covers **scan plugin extensions** and product-lev
 | Goal | Documentation |
 |------|----------------|
 | Rhai script rules | [Rhai Script Rules](./plugins/rhai.md) |
-| WASM scan plugins | [WASM plugins](./plugins/wasm.md) |
 | Declarative rule packs | [Declarative plugins](./plugins/declarative.md) |
 | Product layers (conceptual) | [Architecture overview](./architecture.md) |
 | Use the product | [User guide](../guide/) |
 
 ## Stack (public summary)
 
-FlowMind is a desktop app with a web UI and native backend, local database storage, and WASM/declarative scan plugins. Exact versions ship with releases; **repository layout and internal module names are not documented publicly**.
+FlowMind is a desktop app with a web UI and native backend, local database storage, and Rhai/declarative scan plugins. Exact versions ship with releases; **repository layout and internal module names are not documented publicly**.
 
 ## Plugin development
 
-See [Rhai Script Rules](./plugins/rhai.md), [WASM plugins](./plugins/wasm.md), or [Declarative plugins](./plugins/declarative.md). Open the scanner plugin workspace from **Settings → General → Local workspace** in the app to test packs.
+See [Rhai Script Rules](./plugins/rhai.md) or [Declarative plugins](./plugins/declarative.md). Open the scanner plugin workspace from **Settings → General → Local workspace** in the app to test packs.
 
 Building the full host app or running integration tests requires **authorized contributor** access—contact maintainers for internal docs.
 

@@ -55,7 +55,7 @@ FlowMind 企业版提供更强大的能力：
 
 如果您仅需扩展**扫描规则**，请使用插件文档：
 
-- [WASM 插件](../dev/plugins/wasm.md)
+- [Rhai 脚本规则](../dev/plugins/rhai.md)
 - [声明式插件](../dev/plugins/declarative.md)
 
 ::: warning 请勿在公开渠道索取

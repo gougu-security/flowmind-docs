@@ -66,7 +66,7 @@ Deep AI integration with multi-provider support, tool calling, knowledge base re
 
 ### 🔌 Extensible
 
-Support for Rhai scripts, WASM, and declarative YAML plugin mechanisms to easily extend scanning rules for customized needs.
+Support for Rhai scripts and declarative YAML plugin mechanisms to easily extend scanning rules for customized needs.
 
 ## Community
 

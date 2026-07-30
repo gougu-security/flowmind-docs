@@ -35,7 +35,7 @@ flowchart TD
 | Core | Orchestrates subsystems, entitlements, project context |
 | Proxy | Listen, MITM, connection and message handling |
 | Storage | Flows, findings, config, sessions |
-| Scanner & plugins | Built-in rules + WASM / declarative extensions |
+| Scanner & plugins | Built-in rules + Rhai / declarative extensions |
 | AI | Multi-provider chat, tools/MCP, memory and RAG |
 
 ## Data & privacy
@@ -48,7 +48,7 @@ flowchart TD
 
 Public implementation-level documentation is **limited to scan plugins**:
 
-- [WASM plugins](./plugins/wasm.md)
+- [Rhai Script Rules](./plugins/rhai.md)
 - [Declarative plugins](./plugins/declarative.md)
 
 Plugins run in a controlled runtime and interact through documented inputs/outputs without requiring host source access.
@@ -56,7 +56,7 @@ Plugins run in a controlled runtime and interact through documented inputs/outpu
 ## See also
 
 - [Developer overview](./index.md)
-- [Plugin development](./plugins/wasm.md)
+- [Rhai Script Rules](./plugins/rhai.md)
 - [User guide](../guide/)
 
 ::: info Maintainers & authorized contributors

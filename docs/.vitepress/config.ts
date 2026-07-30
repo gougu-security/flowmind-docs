@@ -67,7 +67,6 @@ const zhSidebar = {
       text: '插件开发',
       items: [
         { text: 'Rhai 脚本规则', link: '/dev/plugins/rhai' },
-        { text: 'WASM 插件', link: '/dev/plugins/wasm' },
         { text: '声明式插件', link: '/dev/plugins/declarative' },
       ]
     },
@@ -149,7 +148,6 @@ const enSidebar = {
       text: 'Plugin Development',
       items: [
         { text: 'Rhai Script Rules', link: '/en/dev/plugins/rhai' },
-        { text: 'WASM Plugins', link: '/en/dev/plugins/wasm' },
         { text: 'Declarative Plugins', link: '/en/dev/plugins/declarative' },
       ]
     },

@@ -220,7 +220,6 @@ fn tag(flow) {
 所有扫描规则使用 **Rhai 脚本** 语言编写。详见：
 
 - [Rhai 脚本规则开发](../dev/plugins/rhai.md) — 编写自定义规则
-- [WASM 插件开发](../dev/plugins/wasm.md) — 高性能 WASM 插件
 - [声明式插件开发](../dev/plugins/declarative.md) — 简单的模式匹配规则
 
 ## 故障排除

@@ -219,13 +219,3 @@ rules:
 3. **Whitelisting**: Add whitelist for known safe patterns
 4. **Thorough Testing**: Test edge cases
 5. **Documentation**: Add clear descriptions
-
-## Comparison with WASM
-
-| Feature | Declarative | WASM |
-|---------|-------------|------|
-| Difficulty | Easy | Medium |
-| Performance | Good | Excellent |
-| Flexibility | Limited | Full |
-| Use Case | Pattern matching | Complex logic |
-| Compilation | None | Required |

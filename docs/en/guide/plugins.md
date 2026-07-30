@@ -188,7 +188,6 @@ Findings can be viewed through:
 All scan rules use the **Rhai scripting language**. See:
 
 - [Rhai Script Rule Development](../dev/plugins/rhai.md)
-- [WASM Plugin Development](../dev/plugins/wasm.md)
 - [Declarative Plugin Development](../dev/plugins/declarative.md)
 
 ## Troubleshooting

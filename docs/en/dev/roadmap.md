@@ -26,7 +26,7 @@ Major capabilities in the current release:
 - ✅ Project management and log viewing
 - ✅ Repeater (raw + structured, replay history)
 - ✅ Fuzzer (multi-strategy, concurrency/rate limit/cancel)
-- ✅ Passive scanning + WASM / declarative workspace plugins
+- ✅ Passive scanning + Rhai / declarative workspace plugins
 - ✅ AI subsystem: multi-provider chat, tool calling, MCP, knowledge base/RAG, security memory, attack graph
 - ✅ JSON / PDF report export and content clipping
 - ✅ Offline license and activation

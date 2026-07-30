@@ -54,7 +54,7 @@ For commercial inquiries:
 
 If you only need to extend **scan rules**, use the plugin documentation:
 
-- [WASM Plugins](../dev/plugins/wasm.md)
+- [Rhai Script Rules](../dev/plugins/rhai.md)
 - [Declarative Plugins](../dev/plugins/declarative.md)
 
 ::: warning Do not request in public

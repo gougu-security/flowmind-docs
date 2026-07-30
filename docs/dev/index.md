@@ -7,21 +7,19 @@
 | 目标 | 文档 |
 |------|------|
 | 编写 Rhai 脚本规则 | [Rhai 脚本规则](./plugins/rhai.md) |
-| 编写 WASM 扫描插件 | [WASM 插件](./plugins/wasm.md) |
 | 编写声明式规则包 | [声明式插件](./plugins/declarative.md) |
 | 了解产品分层（概念） | [架构概览](./architecture.md) |
 | 使用应用功能 | [用户指南](../guide/) |
 
 ## 技术栈（公开信息）
 
-FlowMind 桌面端基于现代 Web 前端 + 原生后端构建，使用本地数据库存储业务数据，扫描插件支持 WASM 与声明式规则包两种形式。具体版本与依赖以发行包为准，**不在公开文档中列出仓库目录或内部 crate/模块名**。
+FlowMind 桌面端基于现代 Web 前端 + 原生后端构建，使用本地数据库存储业务数据，扫描插件支持声明式规则包与 Rhai 脚本两种形式。具体版本与依赖以发行包为准，**不在公开文档中列出仓库目录或内部 crate/模块名**。
 
 ## 环境要求（插件开发）
 
 开发扫描插件通常需要：
 
-- 支持 WASM 的工具链（见 [WASM 插件](./plugins/wasm.md)）
-- 或 YAML/JSON/TOML 编辑器（见 [声明式插件](./plugins/declarative.md)）
+- YAML/JSON/TOML 编辑器（见 [声明式插件](./plugins/declarative.md)）
 
 构建与调试完整桌面宿主应用、运行集成测试等，需**授权贡献者**身份；请联系维护团队获取内部开发文档与环境说明。
 
@@ -37,7 +35,6 @@ FlowMind 桌面端基于现代 Web 前端 + 原生后端构建，使用本地数
 ## 下一步
 
 - [Rhai 脚本规则](./plugins/rhai.md)
-- [WASM 插件](./plugins/wasm.md)
 - [声明式插件](./plugins/declarative.md)
 - [路线图](./roadmap.md)
 

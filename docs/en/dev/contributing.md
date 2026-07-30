@@ -7,7 +7,7 @@ Thank you for your interest in FlowMind. The **host application is commercially 
 | Type | Description | Source access required |
 |------|-------------|------------------------|
 | Docs & i18n | Improve user guides and plugin docs | No |
-| Scan plugins | Share WASM / declarative rule examples | No (see plugin docs) |
+| Scan plugins | Share Rhai / declarative rule examples | No (see plugin docs) |
 | Feedback | Issues in this docs repo | No |
 | Host application | Core proxy, AI, licensing, etc. | **Yes** (contact maintainers) |
 
@@ -50,7 +50,7 @@ pnpm preview
 
 Plugin extensions do not require host internals. See:
 
-- [WASM Plugins](./plugins/wasm.md)
+- [Rhai Script Rules](./plugins/rhai.md)
 - [Declarative Plugins](./plugins/declarative.md)
 
 Validate in the in-app plugin workspace, then share rule packs or doc improvements through agreed channels.
@@ -91,7 +91,7 @@ Public docs target **end users** and **plugin authors**:
 
 - Do **not** publish host Rust/TypeScript implementation, IPC commands, internal types, or database schemas
 - **Licensing**: describe in-app flows only, not verification algorithms or file formats
-- **Plugin exception**: WASM / declarative plugin docs may include plugin-side examples
+- **Plugin exception**: Rhai / declarative plugin docs may include plugin-side examples
 - Use placeholders for credentials in examples
 
 If unsure whether content is appropriate, note the audience in your PR for maintainer review.
