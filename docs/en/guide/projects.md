@@ -39,7 +39,7 @@ Project management isolates test data for different targets, making it easy to o
 When switching projects, these items switch:
 
 - Forwarder Flow list
-- Scanner Finding list
+- Plugins Finding list
 - Project configuration (scan rules, AI settings)
 
 ## Project Settings
@@ -48,13 +48,7 @@ Go to **Settings** → **Project Settings**:
 
 ### Scan Rule Configuration
 
-Select scan rules enabled for current project:
-
-- [x] Sensitive Info Leak
-- [x] Cookie Security
-- [ ] Transport Security
-- [x] CORS Configuration
-- ...
+Select scan rules enabled for current project (28 passive rules + 8 active rules):
 
 ### AI Configuration
 
@@ -65,6 +59,35 @@ Configure AI parameters per project:
 | Default Provider | AI Provider for project |
 | Context Budget | AI analysis context size |
 | Auto Memory | Whether to auto-record to memory |
+
+## Project Notes
+
+Each project supports rich text notes with file attachments:
+
+- **Rich Text Editing**: headings, lists, code blocks, images
+- **File Attachments**: upload any file format
+- **Attachment Management**: reference attachments in notes; automatically included in exported reports
+
+### Using Notes
+
+1. Go to **Settings** → **Project Settings**
+2. Edit content in the project notes area
+3. Upload attachment files
+4. Click **Save**
+
+Project notes are automatically included in exported HTML reports.
+
+## Project Statistics
+
+The project switch dropdown shows current project statistics:
+
+| Metric | Description |
+|--------|-------------|
+| Requests | Total Flows in the project |
+| Findings | Total Findings in the project |
+| Materials | Total report clippings |
+| Memos | Total memos |
+| Exported Reports | Number of generated report files |
 
 ## Data Isolation
 

@@ -17,21 +17,21 @@ This chapter explains how to install and start FlowMind for the first time.
 ::: code-group
 ```bash [Windows]
 # Double-click to run the installer
-FlowMind-0.3.0-x64-setup.exe
+FlowMind-x.x.x-x64-setup.exe
 ```
 
 ```bash [macOS]
 # Open DMG file, drag to Applications
-open FlowMind-0.3.0.dmg
+open FlowMind-x.x.x.dmg
 ```
 
 ```bash [Linux]
 # AppImage method
-chmod +x FlowMind-0.3.0.AppImage
-./FlowMind-0.3.0.AppImage
+chmod +x FlowMind-x.x.x.AppImage
+./FlowMind-x.x.x.AppImage
 
 # Debian/Ubuntu method
-sudo dpkg -i flowmind_0.3.0_amd64.deb
+sudo dpkg -i flowmind_x.x.x_amd64.deb
 ```
 :::
 
@@ -42,26 +42,18 @@ sudo dpkg -i flowmind_0.3.0_amd64.deb
 Double-click the application icon to start FlowMind. On first launch, the application will:
 
 - Initialize the local database (SQLite)
-- Generate CA root certificate (for HTTPS MITM)
+- Generate CA root certificate (for HTTPS decryption)
+- Extract built-in scan rule scripts to workspace
 - Load default configuration
 
 ### 2. Interface Overview
 
-After launching, you'll see the following interface layout:
+After launching, you'll see the main interface with these areas:
 
-```
-┌─────────────────────────────────────────────────────────┐
-│  Title Bar (Project switch, Proxy control, Browser)     │
-├─────────────────────────────────────────────────────────┤
-│  Navigation (Forwarder, Interceptor, Repeater, etc.)    │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│                    Main Content Area                    │
-│                                                         │
-├─────────────────────────────────────────────────────────┤
-│  Status Bar (Proxy status, Connections, Logs)           │
-└─────────────────────────────────────────────────────────┘
-```
+- **Title Bar**: Project switcher, proxy control, browser launcher, settings
+- **Navigation**: Forwarder, Interceptor, Repeater, Fuzzer, Plugins, AI, Reports
+- **Main Content**: The current module's working area
+- **Status Bar**: Proxy status, connection count, log entry
 
 ### 3. Start Proxy
 
@@ -79,7 +71,7 @@ Set your browser proxy to point to FlowMind:
 | HTTPS Proxy | `127.0.0.1:8080` |
 | SOCKS Proxy | Not used |
 
-::: tip Quick Method
+::: tip One-Click Browser Launch
 FlowMind supports one-click browser launch. Click the **Launch Browser** button in the title bar to automatically configure proxy and open browser.
 :::
 
@@ -97,6 +89,11 @@ The CA certificate is only for local development and testing environments. Do no
 
 ## Next Steps
 
-- Learn about [Proxy Core](./proxy.md) detailed configuration
-- Learn to use [Forwarder](./forwarder.md) to view traffic
-- Explore [AI Features](./ai.md) for security analysis
+Once the above steps are complete, the proxy will start capturing traffic. We recommend exploring features in this order:
+
+1. **[Forwarder](./forwarder.md)**: View captured traffic and request details
+2. **[Repeater](./repeater.md)**: Replay and test requests
+3. **[Plugins](./plugins.md)**: Manage scan rules and tag scripts
+4. **[AI Features](./ai.md)**: Use AI for security analysis
+5. **[Projects](./projects.md)**: Isolate test data by project
+6. **[Reports](./reports.md)**: Generate test reports

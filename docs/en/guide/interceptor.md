@@ -1,14 +1,14 @@
 # Interceptor
 
-The Interceptor allows you to intercept, modify, and control in-flight HTTP requests in real-time.
+The Interceptor allows you to intercept, modify, and control in-flight HTTP requests and responses in real-time.
 
 ## Overview
 
 The Interceptor provides the following capabilities:
 
-- **Hold**: Pause requests, wait for manual release
-- **Modify**: Modify request content before release
-- **Drop**: Discard requests, don't send to target server
+- **Hold**: Pause requests or responses, wait for manual release
+- **Modify**: Modify content before release
+- **Drop**: Discard requests, don't send to target server or client
 
 ## Enable Interceptor
 
@@ -16,17 +16,15 @@ The Interceptor provides the following capabilities:
 2. Click **Enable Interception** switch
 3. Configure interception rules (optional)
 
+Once enabled, all matching requests will be paused in the interception queue awaiting processing.
+
 ## Interception Rules
 
 ### By Method
 
 Select HTTP methods to intercept:
 
-- [x] GET
-- [x] POST
-- [ ] PUT
-- [ ] DELETE
-- [ ] Other
+- GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS
 
 ### By Domain
 
@@ -48,12 +46,13 @@ Use regex to match paths:
 
 ## Interception Queue
 
-When requests are intercepted, they enter the queue:
+When requests or responses are intercepted, they enter the queue:
 
 | Field | Description |
 |-------|-------------|
 | Method | HTTP method |
 | URL | Request URL |
+| Direction | Request / Response |
 | Status | Waiting / Modified / Released / Dropped |
 | Intercept Time | Time request was intercepted |
 
@@ -84,29 +83,43 @@ Click request in queue to view full details:
 - **Drop**: Discard request, client will receive timeout or error
 - **Batch Drop**: Select multiple requests, drop at once
 
+## Response Interception
+
+In addition to request interception, the interceptor also supports intercepting responses from the server:
+
+1. After the request reaches the target server, the response is intercepted on its way back
+2. Response headers or body can be modified before release
+3. Useful for debugging response content and testing client behavior
+
 ## Use Cases
 
-### Security Testing
+### Parameter Tampering Testing
 
 ```
-Scenario: Test API parameter tampering
-
 1. Enable interceptor
-2. Trigger target request
+2. Trigger target API request
 3. Modify request parameters in queue
 4. Release modified request
-5. Observe response
+5. Observe server response
 ```
 
-### Debugging
+### Response Modification Debugging
 
 ```
-Scenario: Debug frontend requests
+1. Enable interceptor (including response interception)
+2. Trigger request
+3. Modify response data in interceptor
+4. Release modified response
+5. Observe client behavior
+```
 
-1. Intercept target API by domain
-2. View request details
-3. Modify request headers to add debug info
-4. Release request
+### Request Blocking
+
+```
+1. Configure domain or path interception rules
+2. Matching requests auto-enter queue
+3. Drop unwanted requests
+4. Client receives connection error
 ```
 
 ## Notes

@@ -31,10 +31,10 @@ features:
     details: 支持原始报文重放、结构化请求编辑、多策略 Fuzz（IDOR/Auth Strip/Header 词表等）
   - icon: 🛡️
     title: 安全扫描引擎
-    details: 内置被动扫描规则 + WASM/声明式工作区插件，自动检测敏感信息、Cookie 安全、传输安全等问题
+    details: 28 条内置被动规则 + 8 条主动规则，支持 Rhai 脚本自定义规则与热重载，自动检测敏感信息、注入攻击、配置缺陷等安全问题
   - icon: 🤖
     title: AI 安全分析
-    details: 多 Provider 聊天、Tool Calling、MCP 协议、知识库/RAG、安全记忆、攻击图谱
+    details: 多 Provider 聊天、Tool Calling、MCP 协议、多智能体编排、知识库/RAG、安全记忆与攻击图谱
   - icon: 📊
     title: 项目管理与报告
     details: 项目级数据隔离、素材剪藏、JSON/PDF 报告导出，轻松管理安全测试成果
@@ -46,16 +46,6 @@ features:
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #6366f1 30%, #06b6d4);
 }
 </style>
-
-## 技术栈
-
-| 层级 | 技术选型 |
-|------|----------|
-| 桌面框架 | 跨平台桌面应用 |
-| 前端 | 现代 Web 技术栈 |
-| 后端 | 高性能原生引擎 |
-| AI | 多 Provider、工具调用、向量检索与知识库 |
-| 数据存储 | 本地数据库 |
 
 
 ![FlowMind 转发器界面](/screenshots/forwarder-home.png)
@@ -77,7 +67,7 @@ features:
 
 ### 🔌 可扩展
 
-支持 WASM 和声明式 YAML 插件，轻松扩展扫描规则，满足定制化需求。
+支持 Rhai 脚本、WASM 和声明式 YAML 三种插件机制，轻松扩展扫描规则，满足定制化需求。
 
 ## 社区
 

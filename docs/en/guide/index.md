@@ -4,15 +4,17 @@ Welcome to FlowMind! This guide will help you get started with this AI-Native Ap
 
 ## What is FlowMind?
 
-FlowMind is a desktop application security workbench. It integrates the following core capabilities:
+### Goal
 
-- **Proxy Capture**: Built-in MITM engine supporting HTTP/HTTPS/WebSocket
-- **Traffic Analysis**: Real-time forwarder, interceptor, request details
-- **Request Replay**: Repeater supporting raw and structured requests
-- **Fuzz Testing**: Multi-strategy fuzzing (IDOR, Auth Strip, Header wordlists, etc.)
-- **Security Scanning**: Passive rules + WASM/declarative plugins
-- **AI Analysis**: Multi-provider chat, tool calling, knowledge base, attack graph
-- **Report Export**: JSON/PDF format with content clipping
+FlowMind aims to be a **unified desktop workbench** for security practitioners, eliminating the friction of switching between multiple tools for proxy capture, traffic analysis, and security testing. It consolidates the core workflows of penetration testing and security auditing into a single native desktop application, allowing security professionals to focus on finding issues rather than managing tools.
+
+### Benefits
+
+- **Full Penetration Testing Lifecycle**: Capture traffic → discover vulnerabilities → verify with replay → fuzz test → classify & record → export reports, all in one tool
+- **Comprehensive Coverage**: 28 passive rules + 8 active rules covering OWASP Top 10 risks, with Rhai scripting for custom detection logic
+- **AI-Native**: Multi-provider AI integration, agent orchestration, RAG knowledge base, and attack graph analysis, natively designed to uncover business logic vulnerabilities
+- **Vulnerability Tracking**: Classify each finding as confirmed, fixed, or ignored; add notes and evidence to build an auditable vulnerability ledger
+- **Beautiful Report Export**: Built-in report editor with content clipping and annotations, one-click export to structured JSON and polished HTML reports for professional delivery
 
 ![FlowMind forwarder interface](/screenshots/forwarder-home.png)
 
@@ -43,7 +45,7 @@ Want to get started quickly? Check out the [Installation](./getting-started.md) 
 
 ### Advanced Features
 
-- [Scanner](./scanner.md) - Security scanning rules and plugins
+- [Plugins](./plugins.md) - Security scanning rules and tag scripts
 - [AI Features](./ai.md) - AI security analysis capabilities
 - [Projects](./projects.md) - Project isolation and context management
 - [Reports](./reports.md) - Test report generation

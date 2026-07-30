@@ -86,7 +86,8 @@ Displays basic request information:
 
 Only shown for WebSocket traffic:
 
-- **Messages**: All WebSocket messages
+- **Messages**: All WebSocket messages (text/binary)
+- **Close Frames**: WebSocket connection close information
 - **Details**: Selected message content preview
 
 ### TLS
@@ -97,6 +98,15 @@ Displays TLS/SSL connection information:
 - Cipher suite
 - Certificate information
 - SNI (Server Name Indication)
+
+### Raw
+
+View the raw HTTP message for requests and responses:
+
+- Complete request line and headers
+- Raw request body
+- Response status line and headers
+- Raw response body
 
 ## Context Menu
 
@@ -110,6 +120,31 @@ Right-click in the traffic list to:
 | Copy URL | Copy request URL |
 | Copy cURL | Copy as cURL command |
 | Remove from List | Remove from current list (doesn't delete data) |
+
+## Row Highlighting
+
+Color-code traffic rows to quickly identify items of interest:
+
+1. Right-click a traffic row
+2. Select **Set Row Highlight**
+3. Choose a highlight color
+4. Highlights persist across restarts
+
+## Match-Replace
+
+Automatically modify in-transit requests/responses without manual interception:
+
+| Operation | Description |
+|-----------|-------------|
+| Request Header Replace | Auto-modify matching request headers |
+| Response Header Replace | Auto-modify matching response headers |
+| Request Body Replace | Auto-modify matching request body |
+| Response Body Replace | Auto-modify matching response body |
+
+Use cases:
+- Modify Host header for environment switching
+- Remove security headers for simplified testing
+- Inject test cookies or tokens
 
 ## Keyboard Shortcuts
 

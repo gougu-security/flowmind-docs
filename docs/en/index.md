@@ -31,10 +31,10 @@ features:
     details: Support for raw request replay, structured editing, and multi-strategy fuzzing (IDOR/Auth Strip/Header wordlists)
   - icon: 🛡️
     title: Security Scanning Engine
-    details: Built-in passive scanning rules with WASM/declarative workspace plugins for automatic detection of sensitive info, cookie security, transport security issues
+    details: 28 passive rules + 8 active rules with Rhai scripting for custom rules and hot reload, automatically detects sensitive info, injection attacks, and config flaws
   - icon: 🤖
     title: AI Security Analysis
-    details: Multi-provider chat, Tool Calling, MCP protocol, Knowledge Base/RAG, Security Memory, and Attack Graph
+    details: Multi-provider chat, Tool Calling, MCP protocol, multi-agent orchestration, Knowledge Base/RAG, Security Memory, and Attack Graph
   - icon: 📊
     title: Project Management & Reports
     details: Project-level data isolation, content clipping, JSON/PDF report export for easy security testing management
@@ -47,15 +47,8 @@ features:
 }
 </style>
 
-## Tech Stack
 
-| Layer | Technology |
-|-------|------------|
-| Desktop Framework | Cross-platform desktop app |
-| Frontend | Modern web stack |
-| Backend | High-performance native engine |
-| AI | Multi-provider chat, tools, vector search & knowledge base |
-| Data Storage | Local database |
+![Forwarder Interface](/screenshots/forwarder-home.png)
 
 ## Why Choose FlowMind?
 
@@ -73,7 +66,7 @@ Deep AI integration with multi-provider support, tool calling, knowledge base re
 
 ### 🔌 Extensible
 
-Support for WASM and declarative YAML plugins to easily extend scanning rules for customized needs.
+Support for Rhai scripts, WASM, and declarative YAML plugin mechanisms to easily extend scanning rules for customized needs.
 
 ## Community
 

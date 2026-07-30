@@ -19,20 +19,30 @@ const zhSidebar = {
       ]
     },
     {
-      text: '核心功能',
+      text: '流量捕获',
       items: [
         { text: '代理核心', link: '/guide/proxy' },
         { text: '转发器', link: '/guide/forwarder' },
         { text: '拦截器', link: '/guide/interceptor' },
-        { text: '重发器', link: '/guide/repeater' },
-        { text: '模糊器', link: '/guide/fuzzer' },
       ]
     },
     {
-      text: '高级功能',
+      text: '安全测试',
       items: [
-        { text: '扫描器', link: '/guide/scanner' },
+        { text: '重发器', link: '/guide/repeater' },
+        { text: '模糊器', link: '/guide/fuzzer' },
+        { text: '插件', link: '/guide/plugins' },
+      ]
+    },
+    {
+      text: 'AI 分析',
+      items: [
         { text: 'AI 功能', link: '/guide/ai' },
+      ]
+    },
+    {
+      text: '成果管理',
+      items: [
         { text: '项目管理', link: '/guide/projects' },
         { text: '报告导出', link: '/guide/reports' },
       ]
@@ -56,6 +66,7 @@ const zhSidebar = {
     {
       text: '插件开发',
       items: [
+        { text: 'Rhai 脚本规则', link: '/dev/plugins/rhai' },
         { text: 'WASM 插件', link: '/dev/plugins/wasm' },
         { text: '声明式插件', link: '/dev/plugins/declarative' },
       ]
@@ -90,20 +101,30 @@ const enSidebar = {
       ]
     },
     {
-      text: 'Core Features',
+      text: 'Traffic Capture',
       items: [
         { text: 'Proxy', link: '/en/guide/proxy' },
         { text: 'Forwarder', link: '/en/guide/forwarder' },
         { text: 'Interceptor', link: '/en/guide/interceptor' },
-        { text: 'Repeater', link: '/en/guide/repeater' },
-        { text: 'Fuzzer', link: '/en/guide/fuzzer' },
       ]
     },
     {
-      text: 'Advanced',
+      text: 'Security Testing',
       items: [
-        { text: 'Scanner', link: '/en/guide/scanner' },
+        { text: 'Repeater', link: '/en/guide/repeater' },
+        { text: 'Fuzzer', link: '/en/guide/fuzzer' },
+        { text: 'Plugins', link: '/en/guide/plugins' },
+      ]
+    },
+    {
+      text: 'AI Analysis',
+      items: [
         { text: 'AI Features', link: '/en/guide/ai' },
+      ]
+    },
+    {
+      text: 'Deliverables',
+      items: [
         { text: 'Projects', link: '/en/guide/projects' },
         { text: 'Reports', link: '/en/guide/reports' },
       ]
@@ -127,6 +148,7 @@ const enSidebar = {
     {
       text: 'Plugin Development',
       items: [
+        { text: 'Rhai Script Rules', link: '/en/dev/plugins/rhai' },
         { text: 'WASM Plugins', link: '/en/dev/plugins/wasm' },
         { text: 'Declarative Plugins', link: '/en/dev/plugins/declarative' },
       ]

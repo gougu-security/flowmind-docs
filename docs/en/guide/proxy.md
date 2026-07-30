@@ -1,6 +1,6 @@
 # Proxy Core
 
-FlowMind includes a Rust-based MITM (Man-in-the-Middle) proxy engine that supports HTTP/HTTPS/WebSocket traffic capture.
+FlowMind includes a Rust-based MITM (Man-in-the-Middle) proxy engine that supports HTTP/HTTPS/WebSocket traffic capture and parsing.
 
 ## Proxy Architecture
 
@@ -39,10 +39,21 @@ Go to **Settings** → **Proxy Configuration** to adjust:
 | Listen Port | `8080` | Port the proxy listens on |
 | Max Request Body Size | `10 MB` | Maximum size of a single request body |
 | Max WebSocket Message Size | `1 MB` | Maximum WebSocket message size |
+| Upstream Proxy | Empty | Optional upstream proxy, e.g. `http://proxy.corp:8080` |
 
 ::: tip Port Conflict
 If the configured port is already in use, the proxy will automatically try other ports and display the actual port in the status bar.
 :::
+
+## Upstream Proxy
+
+FlowMind supports forwarding traffic through an upstream proxy, suitable for:
+
+- **Enterprise networks**: Access external networks through corporate proxy
+- **Multi-layer proxy**: Route traffic through other proxy tools
+- **Egress control**: Control traffic exit through a specified proxy
+
+Enter the proxy address (e.g. `http://proxy.corp:8080`) in the upstream proxy configuration, and the proxy engine will automatically forward captured traffic through the upstream proxy.
 
 ## HTTPS MITM
 
@@ -76,10 +87,40 @@ FlowMind fully supports WebSocket protocol:
 | Protocol | Status | Notes |
 |----------|--------|-------|
 | HTTP/1.0 | ✅ Full Support | |
-| HTTP/1.1 | ✅ Full Support | |
+| HTTP/1.1 | ✅ Full Support | Auto-pools connections beyond 256 |
 | HTTPS | ✅ Full Support | Decrypted via MITM |
 | WebSocket | ✅ Full Support | Including WSS |
 | HTTP/2 | ⚠️ Partial | Currently HTTP/1 path based |
+
+## Traffic Handling
+
+### Body Decompression
+
+The proxy automatically decompresses compressed request/response bodies:
+
+- gzip decompression
+- Brotli decompression
+- deflate decompression
+
+View the decoded content in the Forwarder detail panel.
+
+### Domain Filtering
+
+Configure domain exclusion rules in the Forwarder filter bar:
+
+- **Exact exclusion**: `api.example.com`
+- **Wildcard exclusion**: `*.static.cdn.com`
+
+Excluded domains won't appear in the traffic list, useful for filtering static resources or health check requests.
+
+## Related Features
+
+The proxy engine is the foundation for:
+
+- **[Forwarder](./forwarder.md)**: View and analyze captured traffic
+- **[Interceptor](./interceptor.md)**: Intercept and modify in-flight requests
+- **[Match-Replace](./forwarder.md#match-replace)**: Auto-modify in-transit requests/responses
+- **[Plugins](./plugins.md)**: Security check on captured traffic
 
 ## Troubleshooting
 
