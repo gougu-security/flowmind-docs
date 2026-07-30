@@ -43,9 +43,9 @@ FlowMind 企业版提供更强大的能力：
 
 如有商业合作需求，请通过以下方式联系：
 
-- **邮箱**：contact@example.com
-- **官网**：https://example.com
-- **微信**：example_business
+- **邮箱**：gougu_sec@qq.com
+- **官网**：https://flowmind.dev
+- **微信**：FlowMind_Business
 
 ::: tip 合作流程
 1. 需求沟通 → 2. 方案定制 → 3. POC 验证 → 4. 商务签约 → 5. 交付上线
