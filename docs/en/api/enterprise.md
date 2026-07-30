@@ -74,8 +74,8 @@ FlowMind Enterprise provides comprehensive application security solutions for la
 
 ## Contact Us
 
-- **Business Inquiry**: gougu_sec@qq.com
-- **Technical Inquiry**: gougu_sec@qq.com
+- **Business Inquiry**: flowmind@qq.com
+- **Technical Inquiry**: flowmind@qq.com
 - **Website**: https://flowmind.dev
 
 ::: tip Schedule a Demo

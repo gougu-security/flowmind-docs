@@ -43,7 +43,7 @@ We welcome the following forms of technical cooperation:
 
 For commercial inquiries:
 
-- **Email**: gougu_sec@qq.com
+- **Email**: flowmind@qq.com
 - **Website**: https://flowmind.dev
 
 ::: tip Partnership Process

@@ -43,7 +43,7 @@ FlowMind 企业版提供更强大的能力：
 
 如有商业合作需求，请通过以下方式联系：
 
-- **邮箱**：gougu_sec@qq.com
+- **邮箱**：flowmind@qq.com
 - **官网**：https://flowmind.dev
 - **微信**：FlowMind_Business
 

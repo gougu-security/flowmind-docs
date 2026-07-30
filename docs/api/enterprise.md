@@ -74,8 +74,8 @@ FlowMind 企业版为大型组织提供全方位的应用安全解决方案。
 
 ## 联系我们
 
-- **商务咨询**：gougu_sec@qq.com
-- **技术咨询**：gougu_sec@qq.com
+- **商务咨询**：flowmind@qq.com
+- **技术咨询**：flowmind@qq.com
 - **官网**：https://flowmind.dev
 
 ::: tip 预约演示
