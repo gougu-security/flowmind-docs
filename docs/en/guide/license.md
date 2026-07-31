@@ -24,6 +24,21 @@ The card may also show plan (trial, professional, etc.), days remaining, and ent
 
 Use **Refresh status** to reload local license information.
 
+## Feature comparison by plan
+
+Feature availability per plan (Trial / Basic / Professional / Enterprise):
+
+| Feature | Trial | Basic | Professional | Enterprise |
+|---------|:-----:|:-----:|:------------:|:----------:|
+| Proxy | ✓ | ✓ | ✓ | ✓ |
+| FlowView | ✓ | ✓ | ✓ | ✓ |
+| WebSocketCapture | ✓ | ✓ | ✓ | ✓ |
+| Plugin | ✓ | ✗ | ✓ | ✓ |
+| Repeater | ✓ | ✗ | ✓ | ✓ |
+| Fuzzer | ✓ | ✗ | ✓ | ✓ |
+| ReportExport | ✓ | ✗ | ✗ | ✓ |
+| AiAssistant | ✓ | ✗ | ✗ | ✓ |
+
 ## Import a license
 
 When you receive a license file from an administrator:

@@ -26,6 +26,21 @@ FlowMind 部分功能需有效许可后使用。许可相关操作均在应用�
 
 点击 **刷新状态** 可重新读取本地许可信息。
 
+## 版本功能对照
+
+各版本（Trial / Basic / Professional / Enterprise）的功能授权对照如下：
+
+| 功能 | Trial | Basic | Professional | Enterprise |
+|------|:-----:|:-----:|:------------:|:----------:|
+| Proxy | ✓ | ✓ | ✓ | ✓ |
+| FlowView | ✓ | ✓ | ✓ | ✓ |
+| WebSocketCapture | ✓ | ✓ | ✓ | ✓ |
+| Plugin | ✓ | ✗ | ✓ | ✓ |
+| Repeater | ✓ | ✗ | ✓ | ✓ |
+| Fuzzer | ✓ | ✗ | ✓ | ✓ |
+| ReportExport | ✓ | ✗ | ✗ | ✓ |
+| AiAssistant | ✓ | ✗ | ✗ | ✓ |
+
 ## 导入许可
 
 若已从管理员处获得许可文件：
