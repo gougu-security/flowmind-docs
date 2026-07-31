@@ -2,6 +2,8 @@
 
 模糊器是一个功能完整的 HTTP/WebSocket 模糊测试引擎，支持多位置标记、多种攻击模式、丰富的载荷生成器、漏洞检测和异常分析。
 
+![FlowMind 转发器界面](/screenshots/模糊器.png)
+
 ## 功能概述
 
 - **多位置标记**：支持 URL、路径、查询参数、请求头、Cookie、请求体、JSONPath、XMLPath 及原始报文标记
