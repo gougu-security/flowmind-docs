@@ -72,6 +72,7 @@
 |------|------|
 | 在线文档 | https://gougu-security.github.io/flowmind-docs/ |
 | 问题反馈 | https://github.com/gougu-security/flowmind-docs/issues |
+| 公众号 | 勾股安全 |
 
 ---
 
