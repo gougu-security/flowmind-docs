@@ -28,16 +28,17 @@ Use **Refresh status** to reload local license information.
 
 Feature availability per plan (Trial / Basic / Professional / Enterprise):
 
-| Feature | Trial | Basic | Professional | Enterprise |
-|---------|:-----:|:-----:|:------------:|:----------:|
-| Proxy | ✓ | ✓ | ✓ | ✓ |
-| FlowView | ✓ | ✓ | ✓ | ✓ |
-| WebSocketCapture | ✓ | ✓ | ✓ | ✓ |
-| Plugin | ✓ | ✗ | ✓ | ✓ |
-| Repeater | ✓ | ✗ | ✓ | ✓ |
-| Fuzzer | ✓ | ✗ | ✓ | ✓ |
-| ReportExport | ✓ | ✗ | ✗ | ✓ |
-| AiAssistant | ✓ | ✗ | ✗ | ✓ |
+| Feature | Chinese label | Trial | Basic | Professional | Enterprise |
+|---------|---------------|:-----:|:-----:|:------------:|:----------:|
+| Proxy | 代理 | ✓ | ✓ | ✓ | ✓ |
+| FlowView | 流量查看 | ✓ | ✓ | ✓ | ✓ |
+| WebSocketCapture | WebSocket 捕获 | ✓ | ✓ | ✓ | ✓ |
+| Plugin | 插件 | ✓ | ✗ | ✓ | ✓ |
+| Repeater | 重放器 | ✓ | ✗ | ✓ | ✓ |
+| Fuzzer | 模糊测试 | ✓ | ✗ | ✓ | ✓ |
+| Sequence | 序列器 | ✓ | ✗ | ✓ | ✓ |
+| ReportExport | 报告导出 | ✓ | ✗ | ✗ | ✓ |
+| AiAssistant | AI 助手 | ✓ | ✗ | ✗ | ✓ |
 
 ## Import a license
 

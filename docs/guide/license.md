@@ -30,16 +30,17 @@ FlowMind 部分功能需有效许可后使用。许可相关操作均在应用�
 
 各版本（Trial / Basic / Professional / Enterprise）的功能授权对照如下：
 
-| 功能 | Trial | Basic | Professional | Enterprise |
-|------|:-----:|:-----:|:------------:|:----------:|
-| Proxy | ✓ | ✓ | ✓ | ✓ |
-| FlowView | ✓ | ✓ | ✓ | ✓ |
-| WebSocketCapture | ✓ | ✓ | ✓ | ✓ |
-| Plugin | ✓ | ✗ | ✓ | ✓ |
-| Repeater | ✓ | ✗ | ✓ | ✓ |
-| Fuzzer | ✓ | ✗ | ✓ | ✓ |
-| ReportExport | ✓ | ✗ | ✗ | ✓ |
-| AiAssistant | ✓ | ✗ | ✗ | ✓ |
+| 功能 | 中文标签 | Trial | Basic | Professional | Enterprise |
+|------|----------|:-----:|:-----:|:------------:|:----------:|
+| Proxy | 代理 | ✓ | ✓ | ✓ | ✓ |
+| FlowView | 流量查看 | ✓ | ✓ | ✓ | ✓ |
+| WebSocketCapture | WebSocket 捕获 | ✓ | ✓ | ✓ | ✓ |
+| Plugin | 插件 | ✓ | ✗ | ✓ | ✓ |
+| Repeater | 重放器 | ✓ | ✗ | ✓ | ✓ |
+| Fuzzer | 模糊测试 | ✓ | ✗ | ✓ | ✓ |
+| Sequence | 序列器 | ✓ | ✗ | ✓ | ✓ |
+| ReportExport | 报告导出 | ✓ | ✗ | ✗ | ✓ |
+| AiAssistant | AI 助手 | ✓ | ✗ | ✗ | ✓ |
 
 ## 导入许可
 
