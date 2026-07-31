@@ -24,6 +24,13 @@ FlowMind 内置完整的报告系统，支持将测试结果导出为结构化�
 | PDF | 可打印文档格式 | 正式交付、打印归档 |
 | JSON | 结构化数据格式 | 程序化处理、二次分析 |
 
+### HTML 报告展示
+
+<video controls width="100%">
+  <source src="/screenshots/HTML报告展示.mp4" type="video/mp4" />
+  您的浏览器不支持播放视频，请下载后查看。
+</video>
+
 ## 导出报告
 
 ### 导出步骤

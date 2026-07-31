@@ -48,6 +48,11 @@ FlowMind 以 **AI 原生** 为设计核心：AI 不只是辅助问答，而是�
 
 项目级数据隔离、素材剪藏，一键导出精美的 HTML / JSON 报告，轻松沉淀与交付测试成果。
 
+<video controls width="100%">
+  <source src="./docs/public/screenshots/HTML报告展示.mp4" type="video/mp4" />
+  您的浏览器不支持播放视频，请下载后查看。
+</video>
+
 ## 适用场景
 
 - Web / API 渗透测试与漏洞挖掘

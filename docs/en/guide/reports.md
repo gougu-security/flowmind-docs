@@ -22,6 +22,13 @@ The reports page is organized into 5 tabs:
 | PDF | Printable document format | Formal delivery, print archiving |
 | JSON | Structured data format | Programmatic processing, secondary analysis |
 
+### HTML Report Demo
+
+<video controls width="100%">
+  <source src="/screenshots/HTML报告展示.mp4" type="video/mp4" />
+  Your browser does not support video playback. Please download and view.
+</video>
+
 ## Exporting Reports
 
 ### Steps
