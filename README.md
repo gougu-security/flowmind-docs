@@ -1,6 +1,6 @@
 # FlowMind
 
-**AI-Native 应用安全平台** — 面向安全工程师的一站式桌面安全工作台。集成 MITM 代理抓包、流量分析、请求重放、模糊测试、插件化安全检测与 AI 推理，将渗透测试全流程收敛到单一工具中，让安全人员专注于发现问题而非切换工具。
+**AI-Native 应用安全平台** — 面向安全工程师的一站式桌面安全工作台。集成 MITM 代理抓包、流量分析、请求重放、模糊测试、插件化安全检测、精美 HTML 报告与 AI 推理，将渗透测试全流程收敛到单一工具中，让安全人员专注于发现问题而非切换工具。
 
 [![在线文档](https://img.shields.io/badge/文档-在线阅读-6366f1?style=flat-square)](https://gougu-security.github.io/flowmind-docs/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square)](./LICENSE)
@@ -46,7 +46,7 @@ FlowMind 以 **AI 原生** 为设计核心：AI 不只是辅助问答，而是�
 
 ### 项目管理与报告
 
-项目级数据隔离、素材剪藏、JSON / PDF 报告导出，轻松沉淀与交付测试成果。
+项目级数据隔离、素材剪藏，一键导出精美的 HTML / JSON 报告，轻松沉淀与交付测试成果。
 
 ## 适用场景
 
