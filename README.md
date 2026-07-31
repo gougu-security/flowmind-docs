@@ -5,7 +5,7 @@
 [![在线文档](https://img.shields.io/badge/文档-在线阅读-6366f1?style=flat-square)](https://gougu-security.github.io/flowmind-docs/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square)](./LICENSE)
 
-![FlowMind 转发器界面](./docs/public/screenshots/forwarder-home.png)
+![FlowMind 转发器界面](./docs/public/screenshots/首页.png)
 
 ---
 
