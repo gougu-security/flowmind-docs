@@ -3,7 +3,7 @@
 **AI-Native 应用安全平台** — 集成 MITM 代理、流量分析、模糊测试、安全扫描与 AI 推理的一站式安全工作台。
 
 [![在线文档](https://img.shields.io/badge/文档-在线阅读-6366f1?style=flat-square)](https://gougu-security.github.io/flowmind-docs/)
-
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square)](./LICENSE)
 
 ![FlowMind 转发器界面](./docs/public/screenshots/forwarder-home.png)
 
@@ -17,7 +17,7 @@
 |------|-----------------|
 | 工具链割裂 | 代理、重放、Fuzz、扫描、报告在同一工作台完成 |
 | 海量流量难浏览 | 高性能引擎 + 虚拟列表，流畅处理大规模请求 |
-| 规则难以扩展 | WASM / 声明式插件，按需定制扫描能力 |
+| 规则难以扩展 | Rhai 脚本 / 声明式插件，按需定制扫描能力 |
 | AI 与测试脱节 | 多 Provider、知识库、攻击图谱与安全记忆深度集成 |
 
 ## 核心能力
@@ -36,7 +36,7 @@
 
 ### 安全扫描引擎
 
-内置被动扫描规则，配合 WASM / 声明式工作区插件，自动发现敏感信息泄露、Cookie 与传输层安全问题。
+28 条内置被动规则 + 8 条主动规则，支持 Rhai 脚本与声明式插件热重载，自动发现敏感信息泄露、注入攻击与配置缺陷。
 
 ### AI 安全分析
 
@@ -60,7 +60,7 @@
 2. 阅读 [快速开始](https://gougu-security.github.io/flowmind-docs/guide/getting-started) 完成安装与证书配置
 3. 按需查阅 [用户指南](https://gougu-security.github.io/flowmind-docs/guide/) 探索各功能模块
 
-插件开发者请参阅 [插件开发文档](https://gougu-security.github.io/flowmind-docs/dev/plugins/wasm)。
+插件开发者请参阅 [插件开发文档](https://gougu-security.github.io/flowmind-docs/dev/plugins/rhai)。
 
 ## 企业与合作
 
