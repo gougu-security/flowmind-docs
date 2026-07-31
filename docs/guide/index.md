@@ -3,7 +3,7 @@
 欢迎使用 FlowMind！本指南将帮助您快速上手这款 AI-Native 应用安全平台。
 
 
-![FlowMind 转发器界面](/screenshots/forwarder-home.png)
+![FlowMind 转发器界面](/screenshots/首页.png)
 
 
 ## 什么是 FlowMind？

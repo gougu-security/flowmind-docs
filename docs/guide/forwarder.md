@@ -5,7 +5,7 @@
 ## 界面布局
 
 
-![FlowMind 转发器界面](/screenshots/forwarder-home.png)
+![FlowMind 转发器界面](/screenshots/转发器.png)
 
 
 ## 流量列表

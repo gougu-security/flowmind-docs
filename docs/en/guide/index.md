@@ -16,7 +16,7 @@ FlowMind aims to be a **unified desktop workbench** for security practitioners, 
 - **Vulnerability Tracking**: Classify each finding as confirmed, fixed, or ignored; add notes and evidence to build an auditable vulnerability ledger
 - **Beautiful Report Export**: Built-in report editor with content clipping and annotations, one-click export to structured JSON and polished HTML reports for professional delivery
 
-![FlowMind forwarder interface](/screenshots/forwarder-home.png)
+![FlowMind home](/screenshots/首页.png)
 
 ## System Requirements
 

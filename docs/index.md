@@ -48,7 +48,7 @@ features:
 </style>
 
 
-![FlowMind 转发器界面](/screenshots/forwarder-home.png)
+![FlowMind 首页](/screenshots/首页.png)
 
 
 ## 为什么选择 FlowMind？
