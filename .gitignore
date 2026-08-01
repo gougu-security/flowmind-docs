@@ -12,4 +12,5 @@ docs/.vitepress/cache/
 node_modules/
 .pnpm-store/
 docs/.DS_Store
+docs/public/.DS_Store
 pnpm-workspace.yaml

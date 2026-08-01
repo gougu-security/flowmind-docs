@@ -44,6 +44,7 @@ Want to get started quickly? Check out the [Installation](./getting-started.md) 
 ### Security Testing
 
 - [Repeater](./repeater.md) - Request replay and debugging
+- [Sequence](./sequence.md) - Multi-step request orchestration and variable passing
 - [Fuzzer](./fuzzer.md) - Fuzz testing configuration and execution
 - [Plugins](./plugins.md) - Security scanning rules and tag scripts
 

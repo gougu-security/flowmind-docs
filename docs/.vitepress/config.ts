@@ -30,6 +30,7 @@ const zhSidebar = {
       text: '安全测试',
       items: [
         { text: '重发器', link: '/guide/repeater' },
+        { text: '序列器', link: '/guide/sequence' },
         { text: '模糊器', link: '/guide/fuzzer' },
         { text: '插件', link: '/guide/plugins' },
       ]
@@ -111,6 +112,7 @@ const enSidebar = {
       text: 'Security Testing',
       items: [
         { text: 'Repeater', link: '/en/guide/repeater' },
+        { text: 'Sequence', link: '/en/guide/sequence' },
         { text: 'Fuzzer', link: '/en/guide/fuzzer' },
         { text: 'Plugins', link: '/en/guide/plugins' },
       ]

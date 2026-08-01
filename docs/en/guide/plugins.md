@@ -2,7 +2,7 @@
 
 Plugins is the security detection core of FlowMind. All scan rules and tag scripts are managed here. The Plugins page has three tabs: **Rules** (passive scanning), **Scan** (active scanning), and **Tags** (request tagging scripts).
 
-![Plugins](/screenshots/扫描器.png)
+![Plugins](/screenshots/插件.png)
 
 ## Overview
 
